@@ -51,7 +51,7 @@
             </ul>
         </div>
         <div class="col-1" style="padding-left: 77px;" >
-        <a href="deconnexion.php" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Déconnecter</a>
+        <a href="#" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Déconnecter</a>
         </div>
     </div>
 

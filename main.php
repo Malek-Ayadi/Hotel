@@ -1,9 +1,5 @@
 <?php
-/* njarreb fel commit */
-	include('verificationAuthentification.php');
-	echo '<header>\n';
-	include('header.php');
-	echo '\n</header>';
+//	include 'header.php'
 ?>
 <body>
 	<img src="main/ane_4.jpg">;

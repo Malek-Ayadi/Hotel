@@ -1,6 +1,4 @@
 <?php
-	include 'verificationAuthentification.php';
-	include 'header.php';
 
 	try
 	{
@@ -16,7 +14,7 @@
 <!DOCTYPE html>
 	<html>
 	<head>
-		<title>Gestion Personne</title>
+		<title>Réservation</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>

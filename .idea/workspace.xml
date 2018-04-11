@@ -3,10 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="41043315-8277-41b8-b30c-1f6907c99d2a" name="Default" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/facturation.php" afterPath="$PROJECT_DIR$/facturation.php" />
       <change beforePath="$PROJECT_DIR$/index.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/projet (2).zip" afterPath="" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/navigationEmploye.php" afterPath="" />
+>>>>>>> fc6285129834aab302931dff884d39d6da357db4
 =======
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -26,7 +32,11 @@
         <entry file="file://$PROJECT_DIR$/enregistrement.php">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="0">
+=======
+            <state relative-caret-position="34">
+>>>>>>> fc6285129834aab302931dff884d39d6da357db4
 =======
             <state relative-caret-position="34">
 >>>>>>> fc6285129834aab302931dff884d39d6da357db4
@@ -62,11 +72,17 @@
         <entry file="file://$PROJECT_DIR$/navigationEmployee.php">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="-476">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <marker date="1523457682010" expanded="true" signature="462:494" ph="SELECT * FRO... reservation" />
               </folding>
+=======
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+>>>>>>> fc6285129834aab302931dff884d39d6da357db4
 =======
             <state relative-caret-position="153">
               <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -79,6 +95,7 @@
       <file leaf-file-name="traitementFacturation.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/traitementFacturation.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="766">
               <caret line="55" column="10" lean-forward="false" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
@@ -93,10 +110,16 @@
               <caret line="35" column="83" lean-forward="false" selection-start-line="35" selection-start-column="83" selection-end-line="35" selection-end-column="83" />
               <folding />
 >>>>>>> fc6285129834aab302931dff884d39d6da357db4
+=======
+            <state relative-caret-position="595">
+              <caret line="35" column="83" lean-forward="false" selection-start-line="35" selection-start-column="83" selection-end-line="35" selection-end-column="83" />
+              <folding />
+>>>>>>> fc6285129834aab302931dff884d39d6da357db4
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <file leaf-file-name="facturation.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facturation.php">
@@ -107,6 +130,8 @@
                 <element signature="e#6#77#0#PHP" expanded="true" />
               </folding>
 =======
+=======
+>>>>>>> fc6285129834aab302931dff884d39d6da357db4
       <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -122,9 +147,12 @@
         <entry file="file://$PROJECT_DIR$/main.php">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="189">
               <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
 =======
+=======
+>>>>>>> fc6285129834aab302931dff884d39d6da357db4
             <state relative-caret-position="357">
               <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
 >>>>>>> fc6285129834aab302931dff884d39d6da357db4
@@ -181,6 +209,9 @@
 =======
         <option value="$PROJECT_DIR$/main.php" />
         <option value="$PROJECT_DIR$/navigationEmployee.php" />
+<<<<<<< HEAD
+>>>>>>> fc6285129834aab302931dff884d39d6da357db4
+=======
 >>>>>>> fc6285129834aab302931dff884d39d6da357db4
       </list>
     </option>
@@ -269,13 +300,20 @@
       <workItem from="1523453475676" duration="2648000" />
       <workItem from="1523461200539" duration="9000" />
       <workItem from="1523464694113" duration="73000" />
+<<<<<<< HEAD
+>>>>>>> fc6285129834aab302931dff884d39d6da357db4
+=======
 >>>>>>> fc6285129834aab302931dff884d39d6da357db4
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="15005000" />
+=======
+    <option name="totallyTimeSpent" value="7965000" />
+>>>>>>> fc6285129834aab302931dff884d39d6da357db4
 =======
     <option name="totallyTimeSpent" value="7965000" />
 >>>>>>> fc6285129834aab302931dff884d39d6da357db4
@@ -680,7 +718,11 @@
     <entry file="file://$PROJECT_DIR$/enregistrement.php">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="0">
+=======
+        <state relative-caret-position="34">
+>>>>>>> fc6285129834aab302931dff884d39d6da357db4
 =======
         <state relative-caret-position="34">
 >>>>>>> fc6285129834aab302931dff884d39d6da357db4
@@ -725,6 +767,7 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -753,6 +796,10 @@
 =======
     <entry file="file://$PROJECT_DIR$/facturation.php">
       <provider selected="true" editor-type-id="text-editor">
+=======
+    <entry file="file://$PROJECT_DIR$/facturation.php">
+      <provider selected="true" editor-type-id="text-editor">
+>>>>>>> fc6285129834aab302931dff884d39d6da357db4
         <state relative-caret-position="357">
           <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
           <folding />
@@ -763,6 +810,7 @@
     <entry file="file://$PROJECT_DIR$/traitementFacturation.php">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="766">
           <caret line="55" column="10" lean-forward="false" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
           <folding>
@@ -771,6 +819,8 @@
             <marker date="1523465790212" expanded="true" signature="543:726" ph="SELECT `cons... produit" />
             <marker date="1523465790212" expanded="true" signature="543:727" ph="SELECT `cons... produit" />
 =======
+=======
+>>>>>>> fc6285129834aab302931dff884d39d6da357db4
         <state relative-caret-position="595">
           <caret line="35" column="83" lean-forward="false" selection-start-line="35" selection-start-column="83" selection-end-line="35" selection-end-column="83" />
           <folding />
@@ -792,13 +842,19 @@
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <marker date="1523464554838" expanded="true" signature="672:704" ph="SELECT * FRO... reservation" />
+<<<<<<< HEAD
+>>>>>>> fc6285129834aab302931dff884d39d6da357db4
+=======
 >>>>>>> fc6285129834aab302931dff884d39d6da357db4
           </folding>
         </state>
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> fc6285129834aab302931dff884d39d6da357db4
     <entry file="file://$PROJECT_DIR$/navigationEmployee.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">

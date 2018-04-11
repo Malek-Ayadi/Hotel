@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Home Page</title>
+    <title></title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,20 +29,20 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
+                    <a class="nav-link" href="main.php">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Réservation</a>
+                    <a class="nav-link" href="reservation.php">Réservation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Enregistrement</a>
+                    <a class="nav-link" href="Enregistrement.php">Enregistrement</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Consommation</a>
+                    <a class="nav-link" href="Consommation.php">Consommation</a>
                 </li><li class="nav-item">
-                    <a class="nav-link" href="#">Facturation</a>
+                    <a class="nav-link" href="Facturation.php">Facturation</a>
                 </li><li class="nav-item">
                     <a class="nav-link" href="#">Chambre</a>
                 </li></li><li class="nav-item">
@@ -51,7 +51,7 @@
             </ul>
         </div>
         <div class="col-1" style="padding-left: 77px;" >
-        <a href="#" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">déconnecter</a>
+        <a href="#" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Déconnecter</a>
         </div>
     </div>
 

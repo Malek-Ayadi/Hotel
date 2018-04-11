@@ -1,6 +1,5 @@
 <?php
 	session_start();
-	echo $_POST['login'];
 	try
 	{
 		$bdd = new PDO('mysql:host=localhost;dbname=projet;charset=utf8', 'root', ''); //changer le mdp en fonction du serveur local de ton pc

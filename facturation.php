@@ -1,6 +1,6 @@
 <?php
-include 'verificationAuthentification.php';
-include 'header.php';
+/* include 'verificationAuthentification.php';
+include 'header.php'; */
 
 try
 {
@@ -22,8 +22,7 @@ catch(Exception $e)
 </head>
 <body>
 <form method="post" action="traitementFacturation.php">
-    <label for="nom">Nom</label><input type="text" name="nom">
-    <label for="prenom">Prenom</label><input type="text" name="prenom">
+    <label for="cin">Cin</label> <input type="text" name="cin">
     <input type="submit" name="entrer" value="entrer">
 </form>
 

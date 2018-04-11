@@ -33,7 +33,7 @@ catch (PDOException $e)
                                     <tr>
                                         <td>
                                             <?php
-                                            echo ($aff['id_cons.projet.consommation']);
+                                            echo ($aff['projet.consommation.id_cons']);
                                             ?>
                                         </td>
 

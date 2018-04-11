@@ -1,7 +1,7 @@
 <?php
 
-	include 'verificationAuthentification.php';
-	include 'header.php';
+/*	include 'verificationAuthentification.php';
+	include 'header.php';*/
 
 	include 'enregistrementClt.php';
 	include 'enregistrementRes.php';

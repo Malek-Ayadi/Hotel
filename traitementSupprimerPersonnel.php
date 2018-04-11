@@ -12,18 +12,12 @@
 	    die('Erreur : '.$e->getMessage());
 
 	}
-
 	$bdd->query("USE projet");
-
-	$req=$bdd->prepare('UPDATE produit SET libellé = :lib, prix = :prix WHERE produit.id_produit = :id');
+	$req=$bdd->prepare('DELETE FROM `employee` WHERE `employee`.`login` = ?');
 	$req->execute(array
 		(
-			'lib'=>$_POST['libelle'],
-			'prix'=>$_POST['prix'],
-			'id'=>$_GET['id']
+			$_GET['login'],
 		));
-
-	header("Location: gererProduit.php");
+	header("Location: gererPersonnel.php");
 	
-?>
-
+	?>

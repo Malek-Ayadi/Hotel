@@ -10,18 +10,15 @@
 		die('erreur : '.$e->getMessage());
 	}
 
-	$req=$bdd->query('SELECT login,password from projet.employee');
+	$req=$bdd->query('SELECT login,password,admin from projet.employee');
 	while($resultat=$req->fetch())
 	{
-		if (strtoupper($resultat['login'])==strtoupper($_POST['login']))
-		{	echo'hello';
-
-			if ($resultat['password']==$_POST['pwd'])
-			{
-				$_SESSION['login']=$_POST['login'];
-				header('Location: main.php');
-				exit();
-			}
+		if ((strtoupper($resultat['login'])==strtoupper($_POST['login']))and($resultat['password']==$_POST['pwd']))
+		{	
+			$_SESSION['login']=$_POST['login'];
+			$_SESSION['admin']=$resultat['admin'];
+			header('Location: main.php');
+			exit();
 		}
 
 	}

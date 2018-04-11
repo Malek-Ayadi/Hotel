@@ -1,5 +1,5 @@
 <?php
-/* njarreb fel commit */
+
 	include('verificationAuthentification.php');
 	echo '<header>\n';
 	include('header.php');

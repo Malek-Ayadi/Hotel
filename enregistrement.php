@@ -1,6 +1,15 @@
 <?php
+<<<<<<< HEAD
 	include 'verificationAuthentification.php';
 	
+=======
+
+/*	include 'verificationAuthentification.php';
+	include 'header.php';*/
+
+	include 'enregistrementClt.php';
+	include 'enregistrementRes.php';
+>>>>>>> 5b085b022d9d7462c9856636ddcbe52259d5062e
 ?>
 <!DOCTYPE html>
 <html>

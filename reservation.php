@@ -1,6 +1,4 @@
 <?php
-	include 'verificationAuthentification.php';
-	include 'header.php';
 
 	try
 	{

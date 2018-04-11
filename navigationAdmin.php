@@ -36,10 +36,10 @@
                     <a class="nav-link" href="reservation.php">Réservation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="enregistrement/Enregistrement.php">Enregistrement</a>
+                    <a class="nav-link" href="Enregistrement.php">Enregistrement</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="consommation/Consommation.php">Consommation</a>
+                    <a class="nav-link" href="Consommation.php">Consommation</a>
                 </li><li class="nav-item">
                     <a class="nav-link" href="Facturation.php">Facturation</a>
                 </li><li class="nav-item">
@@ -50,7 +50,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Espace Admin</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="espace admin/gerer produit/gererProduit.php">Gérer produit</a>
+                        <a class="dropdown-item" href="gererProduit.php">Gérer produit</a>
                         <a class="dropdown-item" href="#">Gérer chambre</a>
                         <a class="dropdown-item" href="#">Gérer personnel</a>
                     </div>

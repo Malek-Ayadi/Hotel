@@ -1,10 +1,10 @@
 <?php
 include("verificationAuthentification.php");
-include("navigation/choixNavigation.php");
+include("choixNavigation.php");
 ?>
 <body>
-	<style src="vendor/bootstrap/css/bootstrap.min.css"></style>
-	<style>
+  <style src="vendor/bootstrap/css/bootstrap.min.css"></style>
+  <style>
 .container1 {
   position: relative;
   width: 200px;
@@ -52,13 +52,13 @@ include("navigation/choixNavigation.php");
       
       
       <td >
-      	<div class="container1" >
-  	<img src="face.jpeg" alt="face" class="image1">
-  	<div class="overlay1">
+        <div class="container1" >
+    <img src="face.jpeg" alt="face" class="image1">
+    <div class="overlay1">
     <div class="text1">Skander Meziane</div>
- 	 </div>
- 	</div>
-	</td>
+   </div>
+  </div>
+  </td>
 
 
 
@@ -67,7 +67,7 @@ include("navigation/choixNavigation.php");
 
 
       <td>
-      	<div class="container1" >
+        <div class="container1" >
   <img src="face.jpeg" alt="face" class="image1">
   <div class="overlay1">
     <div class="text1">khlil turki</div>

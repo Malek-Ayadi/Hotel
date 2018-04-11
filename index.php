@@ -26,7 +26,7 @@
                 <div class="login" id="card">
                     <div class="front signin_form">
                         <p>Login Your Account</p>
-                        <form class="login-form" method="post" action="index/traitementIndex.php">
+                        <form class="login-form" method="post" action="traitementIndex.php">
                             <div class="form-group">
                                 <div class="input-group">
                                     <input type="text" class="form-control" name="login" placeholder="Type your login">

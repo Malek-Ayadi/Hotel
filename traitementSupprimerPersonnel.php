@@ -1,6 +1,6 @@
 <?php
 
-	include '../../verificationAuthentification.php';
+	include 'verificationAuthentification.php';
 
 
 	try
@@ -13,12 +13,11 @@
 
 	}
 	$bdd->query("USE projet");
-	$req=$bdd->prepare('DELETE FROM `produit` WHERE `produit`.`id_produit` = ?');
+	$req=$bdd->prepare('DELETE FROM `employee` WHERE `employee`.`login` = ?');
 	$req->execute(array
 		(
-			$_GET['id'],
+			$_GET['login'],
 		));
-	echo $_GET['id'];
-	//header("Location: gererProduit.php");
+	header("Location: gererPersonnel.php");
 	
 	?>

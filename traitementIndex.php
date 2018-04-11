@@ -16,10 +16,10 @@
 		{	
 			$_SESSION['login']=$_POST['login'];
 			$_SESSION['admin']=$resultat['admin'];
-			header('Location: ../main.php');
+			header('Location: main.php');
 			exit();
 		}
 
 	}
-	header('Location: ../index.php?err=2');
+	header('Location: index.php?err=2');
 	?>

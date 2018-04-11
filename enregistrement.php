@@ -1,6 +1,5 @@
 <?php
-	include '../verificationAuthentification.php';
-	
+	include 'verificationAuthentification.php';
 ?>
 <!DOCTYPE html>
 <html>

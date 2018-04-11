@@ -1,5 +1,5 @@
 <?php
-	include '../../verificationAuthentification.php';
+	include 'verificationAuthentification.php';
 
 ?>
 <!DOCTYPE html>
@@ -9,13 +9,13 @@
 	</head>
 	<body>
 		<form action="traitementModifierProduit.php?id=<?php echo $_GET['id']?>" method="POST">
-			<p><label for="libelle">Libellé</label><input type="text" name="libelle" id="libelle"></p>
-			<p><label for="cin">Prix</label><input type="text" name="prix" id="prix"></p>
+			<p><label for="libelle">Libellé</label><input type="text" name="libelle" id="libelle" required></p>
+			<p><label for="prix">Prix</label><input type="text" name="prix" id="prix" required></p>
 			<input type="submit" value="modifier">
 			<input type="button" value="retour" id="retour">
 		</form>
 
-		<script src="buttonRetour.js"></script>
+		<script src="buttonRetourProduit.js"></script>
 
 	</body>
 	</html>

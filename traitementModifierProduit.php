@@ -1,6 +1,6 @@
 <?php
 
-	include '../../verificationAuthentification.php';
+	include 'verificationAuthentification.php';
 
 
 	try
@@ -23,6 +23,7 @@
 			'id'=>$_GET['id']
 		));
 
-header("Location: gererProduit.php");
+	header("Location: gererProduit.php");
 	
 ?>
+

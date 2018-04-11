@@ -1,5 +1,5 @@
 <?php
-	include'../../verificationAuthentification.php';
+	include'verificationAuthentification.php';
 ?>
 
 <!doctype>

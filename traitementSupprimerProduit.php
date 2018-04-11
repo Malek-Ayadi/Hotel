@@ -1,6 +1,6 @@
 <?php
 
-	include '../../verificationAuthentification.php';
+	include 'verificationAuthentification.php';
 
 
 	try
@@ -12,15 +12,12 @@
 	    die('Erreur : '.$e->getMessage());
 
 	}
-
-	$req=$bdd->prepare('INSERT INTO projet.produit (id_produit,libellé,prix) VALUES (?,?,?)');
+	$bdd->query("USE projet");
+	$req=$bdd->prepare('DELETE FROM `produit` WHERE `produit`.`id_produit` = ?');
 	$req->execute(array
 		(
-			$_POST['id'],
-			$_POST['libelle'],
-			$_POST['prix']
+			$_GET['id'],
 		));
-
 	header("Location: gererProduit.php");
 	
-?>
+	?>

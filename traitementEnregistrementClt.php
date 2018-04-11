@@ -1,8 +1,8 @@
 <?php
-/*
+
 	include 'verificationAuthentification.php';
-	include 'header.php';
-*/
+
+
 	try
 	{
 		$bdd= new PDO('mysql:host=localhost;dbName=projet', 'root','');
@@ -25,6 +25,7 @@
 			$_POST['tel']
 		));
 
-	header('Location: enregistrement.php');
+	$cin=$_GET['cin'];
+	header("Location: enregistrementRes.php?cin=$cin");
 	
 ?>

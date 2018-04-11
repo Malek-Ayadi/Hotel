@@ -28,26 +28,23 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
+                    <a class="nav-link" href="main.php">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Réservation</a>
+                    <a class="nav-link" href="reservation.php">Réservation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Enregistrement</a>
+                    <a class="nav-link" href="Enregistrement.php">Enregistrement</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Consommation</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Facturation</a>
-                </li>
-                <li class="nav-item">
+                    <a class="nav-link" href="Consommation.php">Consommation</a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="Facturation.php">Facturation</a>
+                </li><li class="nav-item">
                     <a class="nav-link" href="#">Chambre</a>
-                </li>
-                <li class="nav-item">
+                </li></li><li class="nav-item">
                     <a class="nav-link" href="#">Check-out</a>
                 </li>
                 <li class="nav-item dropdown">

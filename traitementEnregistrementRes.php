@@ -1,8 +1,7 @@
 <?php
-/*
+
 	include 'verificationAuthentification.php';
-	include 'header.php';
-*/
+
 	try
 	{
 		$bdd= new PDO('mysql:host=localhost;dbName=projet', 'root','');
@@ -20,6 +19,8 @@
 			$_POST['dateArr'],
 			$_POST['dateDep']
 		));
+
+	header("Location: reservation.php");
 
 	
 ?> 

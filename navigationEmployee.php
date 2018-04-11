@@ -8,12 +8,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-<<<<<<< HEAD:navigation.php
-    
-=======
-    <title></title>
->>>>>>> b1fc6c2927ead1a094ad24b0b2151baf50395784:navigationEmploye.php
-
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 

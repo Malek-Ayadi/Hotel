@@ -1,6 +1,6 @@
 <?php
 include("verificationAuthentification.php");
-include("choixNavigation.php");
+include("navigation/choixNavigation.php");
 ?>
 <body>
 	<style src="vendor/bootstrap/css/bootstrap.min.css"></style>

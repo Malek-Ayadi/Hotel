@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Home Page</title>
+    
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -41,20 +40,29 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Consommation</a>
-                </li><li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#">Facturation</a>
-                </li><li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#">Chambre</a>
-                </li></li><li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#">Check-out</a>
-                </li></li></li><li class="nav-item">
+                </li>
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Espace Admin</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Gérer produit</a>
+                        <a class="dropdown-item" href="#">Gérer chambre</a>
+                        <a class="dropdown-item" href="#">Gérer personnel</a>
+                    </div>
                 </li>
 
             </ul>
         </div>
         <div class="col-1" style="padding-left: 77px;" >
-            <a href="#" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">déconnecter</a>
+            <a href="deconnexion.php" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">déconnecter</a>
         </div>
     </div>
 

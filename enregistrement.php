@@ -1,20 +1,16 @@
 <?php
-
 	include 'verificationAuthentification.php';
-	include 'header.php';
-
-	include 'enregistrementClt.php';
-	include 'enregistrementRes.php';
+	
 ?>
-
 <!DOCTYPE html>
-	<html>
+<html>
 	<head>
-		<title>enregistrement</title>
+		<title>Enregistrement</title>
 	</head>
 	<body>
-		<form>
-			<button type="button">Réserver </button>
+		<form action="verifExistanceClt.php" method="POST">
+			<p><label for="cin">CIN </label><input type="number" name="cin" id="cin" required></p>
+			<input type="submit" name="Reserver" id="Reserver" value="Réserver">
 		</form>
 	</body>
 	</html>

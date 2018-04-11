@@ -35,10 +35,10 @@
                     <a class="nav-link" href="reservation.php">Réservation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Enregistrement.php">Enregistrement</a>
+                    <a class="nav-link" href="enregistrement/Enregistrement.php">Enregistrement</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Consommation.php">Consommation</a>
+                    <a class="nav-link" href="consommation/Consommation.php">Consommation</a>
                 </li><li class="nav-item">
                     <a class="nav-link" href="Facturation.php">Facturation</a>
                 </li><li class="nav-item">

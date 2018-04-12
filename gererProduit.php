@@ -7,13 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="gererProduitCss.css" rel="stylesheet">
 
     <title>Gerer Produit</title>
 
 </head>
 <body>
-	<a href="ajouterProduit.php">Ajouter produit</a>
-	<table>
+     <div class="bb">
+	       <a href="ajouterProduit.php" class="btn btn-secondary active" role="button" aria-pressed="true">Ajouter produit</a>
+     </div>
+    <div class="col-1">
+	<table class="table-hover table-sm">
 	<?php
 			try
 		{
@@ -24,10 +32,19 @@
 			die('erreur : '.$e->getMessage());
 		}
 		$req=$bdd->query('SELECT * from `Produit`');
+			?>
+        <tr class="table-dark">
+            <td>Id</td>
+            <td>Libellé</td>
+            <td>Prix</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <?php
 		while($resultat=$req->fetch())
 		{
 			?>
-			<tr>
+			<tr class="table-secondary">
 				<td><?php echo $resultat['id_produit'];?></td>
 				<td><?php echo $resultat['libellé'];?></td>
 				<td><?php echo $resultat['prix'];?></td>
@@ -37,4 +54,5 @@
 		}
 	?>
 	</table>
+    </div>
 </body>

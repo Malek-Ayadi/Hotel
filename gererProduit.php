@@ -1,7 +1,3 @@
-<?php
-	include'verificationAuthentification.php';
-?>
-
 <!doctype>
 <html lang="en">
 

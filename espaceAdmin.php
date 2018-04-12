@@ -20,21 +20,17 @@
     <?php
     include ("navigationAdmin.php");
     ?>
-		<div class="container">
-            <div class="row">
-				<div class="col-sm">
-                    <?php include'gererProduit.php' ?>
-                </div>
-                <div class="col-sm">
-                    <?php include'gererPersonnel.php' ?>
-                </div>
-                <div class="col-sm">
-                    <?php //include'gererProduit.php' ?>
-                </div>
-            </div>
-
-
+		<div class="container" style="margin-bottom: 118px">
+          <table class="table ">
+			<tr>
+				<td><?php include'gererProduit.php' ?></td>
+				<td><?php include'gererPersonnel.php' ?></td>
+				<td><?php //include'gererProduit.php' ?></td>
+			</tr>
+		  </table>
         </div>
-
+    <?php
+    include ('piedPage.php');
+    ?>
 	</body>
 	</html>

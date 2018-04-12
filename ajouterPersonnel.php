@@ -5,18 +5,39 @@
 <!DOCTYPE html>
 	<html>
 	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="ajouterPersonnelCss.css" rel="stylesheet">
 		<title>ajouter personnel</title>
 	</head>
 	<body>
+    <div class="container col-3">
 		<form action="traitementAjouterPersonnel.php" method="POST">
-			<p><label for="login">login</label><input type="text" name="login" id="login"></p>
-			<p><label for="password">password</label><input type="password" name="password" id="password"></p>
-			<p><label for="nom">nom</label><input type="text" name="nom" id="nom"></p>
-			<p><label for="prenom">prenom</label><input type="text" name="prenom" id="prenom"></p>
-			<p><label for="mail">mail</label><input type="text" name="mail" id="mail"></p>
-			<p><label for="admin">admin</label><input type="checkbox" name="admin" id="admin"></p>
-			<input type="submit" value="ajouter">
+            <div class="form-row">
+                <div class="col">
+                     <input type="text" class="form-control" placeholder="Nom" name="nom" id="nom">
+                </div>
+                <div class="col">
+                     <input type="text" class="form-control" placeholder="Prénom" name="prenom" id="prenom">
+                </div>
+            </div>
+            <input type="text" class="form-control" placeholder="Login" name="login" id="login">
+			<input type="password" class="form-control" placeholder="Mot de passe" name="password" id="password">
+			<input type="text"  class="form-control" placeholder="E-mail" name="mail" id="mail">
+            <div class="form-check">
+			     <input type="checkbox" class="form-check-input" name="admin" id="admin">
+                <label class="form-check-label" >Admin</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn" value="ajouter">Submit</button>
 		</form>
+    </div>
 
 
 	</body>

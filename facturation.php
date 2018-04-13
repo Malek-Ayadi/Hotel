@@ -30,7 +30,7 @@ catch(Exception $e)
 <body>
 	<div class="container col-6">
 	<div class="border border-primary" style="margin:200px; padding:50px">
-<form method="post" action="traitementFacturation.php">
+<form method="post" action="facturation.php?ok=1">
     <label for="cin">Cin</label> <input type="text" name="cin" class="form-control form-control-lg">
     <input type="submit" name="entrer" value="entrer"  class="btn btn-primary">
 </form>

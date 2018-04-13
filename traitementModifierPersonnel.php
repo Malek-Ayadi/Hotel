@@ -28,7 +28,7 @@
 			'admin'=>$admin,
 			'login'=>$_GET['login']
 		));
-	echo $_POST['login'],$_POST['password'],$_POST['nom'],$_POST['prenom'],$_POST['mail'],$admin,$_GET['login'];
-	//header("Location: gererPersonnel.php");
+	
+	header("Location: espaceAdmin.php");
 	
 ?>

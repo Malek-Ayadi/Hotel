@@ -15,15 +15,15 @@
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="ajouterPersonnelCss.css" rel="stylesheet">
+       <link href="./css/background.css" rel="stylesheet">
 		<title>ajouter produit</title>
 	</head>
 	<body>
 		<?php
     include ("navigationAdmin.php");
     ?>
-    <div class="abc">
-    <div class="container col-3">
+<div class="container col-12">
+    <div  style="margin-right:700px; margin-top: 150px;margin-bottom: 200px; padding-left:50px; padding-right: 50px " >
 		<form action="traitementAjouterProduit.php" method="POST">
 			<input type="text" class="form-control" placeholder="Identifiant" name="id" id="id">
 			<input type="text" class="form-control" placeholder="Libellé" name="libelle" id="libelle">

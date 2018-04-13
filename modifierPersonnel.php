@@ -16,14 +16,15 @@
 
         <!-- Custom styles for this template -->
         <link href="ajouterPersonnelCss.css" rel="stylesheet">
+        <link href="./css/background.css" rel="stylesheet">
 		<title>modifier Personnel</title>
 	</head>
 	<body>
         <?php
     include ("navigationAdmin.php");
     ?>
-    <div class="abc">
-    <div class="container col-3">
+    <div class="container col-12">
+    <div  style="margin-right:700px; margin-top: 100px;margin-bottom: 100px; padding-left:50px; padding-right: 50px " >
 		<form action="traitementModifierPersonnel.php?login=<?php echo $_GET['login']?>" method="POST">
             <div class="form-row">
                 <div class="col">

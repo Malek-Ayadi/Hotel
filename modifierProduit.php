@@ -17,14 +17,17 @@
 
         <!-- Custom styles for this template -->
         <link href="ajouterPersonnelCss.css" rel="stylesheet">
+         <link href="./css/background.css" rel="stylesheet">
+
+        
 		<title>modifier produit</title>
 	</head>
 	<body>
 		<?php
     include ("navigationAdmin.php");
     ?>
-    <div class="abc">
-    <div class="container col-3">
+    <div class="container col-12">
+    <div  style="margin-right:700px; margin-top: 170px;margin-bottom: 170px; padding-left:50px; padding-right: 50px " >
 		<form action="traitementModifierProduit.php?<?php echo 'id='. $_GET['id']?>" method="POST">
 			<input type="text" class="form-control" placeholder="Libellé" name="libelle" id="libelle" value="<?php echo $_GET['libellé'] ?>" required>
 			<input type="text" class="form-control" placeholder="Prix" name="prix" id="prix" value="<?php echo $_GET['prix'] ?>" required>

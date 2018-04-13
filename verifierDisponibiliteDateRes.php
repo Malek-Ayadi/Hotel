@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<div class="container col-12">
-			<div class="border border-primary" style="margin:201px; padding-left:100px; padding-right: 100px; " >
+			<div class="border border-primary" style="margin:200px; padding-left:50px; padding-right: 50px; " >
 		<form action="TraitementVerifDisponibiliteDateRes.php" method="POST">
 			<p>
 				<label for="type">Type de la chambre: </label>

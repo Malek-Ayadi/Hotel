@@ -1,7 +1,12 @@
 <?php
-if (isset($_GET['err']))
+if (isset($_GET['err1']))
 {
-   echo("<p id='er1'>Erreur CIN</p>");
+    echo("<p id='er1'>Erreur CIN</p>");
+
+}
+if (isset($_GET['err2']))
+{
+    echo("<p id='er2'>Reservation sous ce CIN est introuvable </p>");
 
 }
 try

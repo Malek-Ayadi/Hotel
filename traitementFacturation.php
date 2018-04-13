@@ -23,6 +23,13 @@ while ($aff=$reponse->fetch())
        $req1=$bdd->prepare('SELECT * FROM  projet.reservation R WHERE R.id_clt=? ');
        $req1->execute(array($id));
        $aff1=$req1->fetch();
+       $z=$aff1['id_res'];
+
+       if(!isset($z))
+           {
+               header("Location: Facturation.php?err2");
+               exit();
+           }
        $chambre=$aff1['id_chamb'];
 
 
@@ -87,7 +94,7 @@ while ($aff=$reponse->fetch())
 
 
 }
-    header("Location: Facturation.php?err");
+    header("Location: Facturation.php?err1");
 ?>
 
 

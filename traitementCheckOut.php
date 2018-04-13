@@ -24,6 +24,11 @@ while ($affiche=$reponse->fetch())
             $req->execute(array($id));
             $aff = $req->fetch();
             $res = $aff['id_res'];
+            if(!$res)
+            {
+                header("Location: checkOut.php?err2");
+                exit();
+            }
             $req = $bdd->prepare('DELETE FROM projet.reservation  WHERE id_res=?  ');
             $req->execute(array($res));
 
@@ -44,7 +49,7 @@ while ($affiche=$reponse->fetch())
 
         else
                     {
-                        header("Location: checkOut.php?err");
+                        header("Location: checkOut.php?err1");
                     }
 
 

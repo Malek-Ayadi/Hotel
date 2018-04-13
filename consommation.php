@@ -42,7 +42,7 @@ if (isset($_GET['err3']))
     <link href="./css/background.css" rel="stylesheet">
 </head>
 <body>
-	<div id=bc>
+	
 	<div class="container col-12">
 	<div  style="margin-right:700px; margin-top: 150px;margin-bottom: 150px; padding-left:50px; padding-right: 50px " >
 	
@@ -55,7 +55,7 @@ if (isset($_GET['err3']))
 </form>
 </div>
 </div>
-</div>
+
 <?php include 'piedPage.php';  ?>
 </body>
 

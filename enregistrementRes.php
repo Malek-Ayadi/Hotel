@@ -34,7 +34,7 @@
 	<body>
 		<form action="traitementEnregistrementRes.php" method="POST">
 			<p><label for="id_clt">Id client: </label><input required type="number" value="<?php echo ("$id")?>" name="id_clt" id="id_clt"></p>
-			<p><label for="id_clt">Numéro Chambre: </label><input required type="number" value="<?php echo ("$chambre")?>" name="chambre" id="chambre"></p>
+			<p><label for="id_clt">Numéro Chambre: </label><input required type="number" value="<?php echo ("$chambre")?>" name="id_chamb" id="id_chamb"></p>
 			<p><label for="dateArr">Date d'arrivee: </label><input type="date" value="<?php echo ("$dateArr")?>" name="dateArr" id="dateArr" required></p>
 			<p><label for="dateDep">Date de départ: </label><input type="date" value="<?php echo ("$dateDep")?>" name="dateDep" id="dateDep" required></p>
 			<input type="submit" name="reserver" value="Réserver">

@@ -29,8 +29,12 @@
             <div id="id_div_2" style="display:none; >
                 <?php include('gererProduit.php');?>
             </div>
-            <button type="button" class="btn btn-outline-primary" style="padding-right: 9px">Chambre</button>
+            <button type="button" id="cham" class="btn btn-outline-primary" style="padding-right: 9px">Chambre</button>
+            <div id="id_div_3" style="display:none; >
+            <?php include('gererChambre.php');?>
+                    </div>
         </div>
+
     <?php
     include ('piedPage.php');
     ?>

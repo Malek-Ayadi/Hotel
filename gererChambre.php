@@ -10,12 +10,12 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
- 
     <title>Gerer Chambre</title>
 
 </head>
-<body>
-     <div class="aa">
+<body >
+<div class="cor" style="margin-left: 220px">
+     <div class="aa" style="margin-left: 150px">
 	     <a href="ajouterChambre.php" class="btn btn-secondary active" role="button" aria-pressed="true" style="margin-left: 170px;">Ajouter Chambre</a>
      </div>
      <div class="col-2">
@@ -34,15 +34,15 @@
 		$triple=$bdd->query("SELECT * from `chambre` WHERE `chambre`.`type`='triple'");
 			?>
         <tr class="table-dark">
-            <td>Id</td>
+            <td>Identifiant</td>
             <td>Type</td>
             <td></td>
             <td></td>
-            <td>Id</td>
+            <td>Identifiant</td>
             <td>Type</td>
             <td></td>
             <td></td>
-            <td>Id</td>
+            <td>Identifiant</td>
             <td>Type</td>
             <td></td>
             <td></td>
@@ -80,4 +80,5 @@
 	?>
 	</table>
      </div>
+</div>
 </body>

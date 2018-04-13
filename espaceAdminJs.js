@@ -12,3 +12,10 @@ nod2.addEventListener("click",function () {
     if (nod3.style.display == "none")
     { nod3.style.display = "" ; }
     else { nod3.style.display = "none"};});
+
+var nod4=document.getElementById("cham");
+nod4.addEventListener("click",function () {
+    var nod5=document.getElementById("id_div_3");
+    if (nod5.style.display == "none")
+    { nod5.style.display = "" ; }
+    else { nod5.style.display = "none"};});

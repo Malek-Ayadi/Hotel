@@ -1,4 +1,13 @@
-
+<?php
+if(($_GET['err'])==1)
+{
+    echo("<p id='er1'>Erreur ID Produit inexistant</p>");
+}
+else if(($_GET['err'])==2)
+{
+    echo("<p id='er1'>Erreur ID Client inexistant</p>");
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>

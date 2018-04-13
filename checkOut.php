@@ -98,7 +98,7 @@ catch (PDOException $e)
 <div class="container col-6">
     <div class="border border-primary" style="margin:200px; padding:50px">
 <form method="post" action="traitementCheckOut.php">
-    <label for="cin">cin</label> <input type="number" name="Cin" class="form-control form-control-lg">
+    <label for="cin">Cin</label> <input type="number" name="cin" class="form-control form-control-lg">
     <input type="submit" name="entrer" value="entrer" class="btn btn-primary">
 </form>
     </div>

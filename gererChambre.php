@@ -29,26 +29,53 @@
 		{
 			die('erreur : '.$e->getMessage());
 		}
-		$req=$bdd->query('SELECT * from `chambre`');
+		$simple=$bdd->query("SELECT * from `chambre` WHERE `chambre`.`type`='simple'");
+		$double=$bdd->query("SELECT * from `chambre` WHERE `chambre`.`type`='double'");
+		$triple=$bdd->query("SELECT * from `chambre` WHERE `chambre`.`type`='triple'");
 			?>
         <tr class="table-dark">
             <td>Id</td>
             <td>Type</td>
-
+            <td></td>
+            <td></td>
+            <td>Id</td>
+            <td>Type</td>
+            <td></td>
+            <td></td>
+            <td>Id</td>
+            <td>Type</td>
             <td></td>
             <td></td>
 
         </tr>
         <?php
-		while($resultat=$req->fetch())
+		while(1)
 		{
+			($simple1=$simple->fetch());
+			($double1=$double->fetch());
+			($triple1=$triple->fetch());
 			?>
 			<tr class="table-secondary">
-				<td><?php echo $resultat['id_chamb'];?></td>
-				<td><?php echo $resultat['type'];?></td>
-				<td><a href="modifierChambre.php?<?php echo 'id='.($resultat['id_chamb']).'&type='.$resultat['type']?>">modifier</a></td>
-				<td><a href="supprimerChambre.php?id=<?php echo ($resultat['id_chamb']) ?>">supprimer</a></td>
-			</tr><?php
+				<td><?php if (isset($simple1['id_chamb'])) echo $simple1['id_chamb'];?></td>
+				<td><?php if (isset($simple1['type'])) echo $simple1['type'];?></td>
+				<td><a href="modifierChambre.php?<?php echo 'id='.($simple1['id_chamb']).'&type='.$simple1['type']?>"><?php if (isset($simple1['type'])) echo 'modifier';?></a></td>
+				<td><a href="supprimerChambre.php?id=<?php echo ($simple1['id_chamb']) ?>"><?php if (isset($simple1['type'])) echo 'supprimer';?></a></td>
+
+				<td><?php if (isset($double1['id_chamb'])) echo $double1['id_chamb'];?></td>
+				<td><?php if (isset($double1['type'])) echo $double1['type'];?></td>
+				<td><a href="modifierChambre.php?<?php echo 'id='.($double1['id_chamb']).'&type='.$double1['type']?>"><?php if (isset($double1['type'])) echo 'modifier';?></a></td>
+				<td><a href="supprimerChambre.php?id=<?php echo ($double1['id_chamb']) ?>"><?php if (isset($double1['type'])) echo 'supprimer';?></a></td>
+
+				<td><?php if (isset($triple1['id_chamb'])) echo $triple1['id_chamb'];?></td>
+				<td><?php if (isset($triple1['type'])) echo $triple1['type'];?></td>
+				<td><a href="modifierChambre.php?<?php echo 'id='.($triple1['id_chamb']).'&type='.$triple1['type']?>"><?php if (isset($triple1['type'])) echo 'modifier';?></a></td>
+				<td><a href="supprimerChambre.php?id=<?php echo ($triple1['id_chamb']) ?>"><?php if (isset($triple1['type'])) echo 'supprimer';?></a></td>
+
+				</tr><?php
+			if ((!isset($simple1['type']))and (!isset($double1['type']))and(!isset($triple1['type']))) 
+			{
+				break;
+			}
 		}
 	?>
 	</table>

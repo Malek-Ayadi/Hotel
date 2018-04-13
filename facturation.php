@@ -1,4 +1,10 @@
 <?php
+
+if (isset($_GET['err']))
+{
+    echo("<p id='er1'>Erreur CIN</p>");
+
+}
 	include 'verificationAuthentification.php';
 include 'choixNavigation.php';
 

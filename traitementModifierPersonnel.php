@@ -17,7 +17,7 @@
 	if((isset($_POST['admin']))and($_POST['admin']=='on'))
 		$admin=1;
 	else $admin=0;
-	$req=$bdd->prepare('UPDATE produit SET login = :login, password = :password,nom=:nom,prenom=:prenom,mail=:mail,admin=:admin WHERE employee.login =:login');
+	$req=$bdd->prepare('UPDATE projet.employee SET login = :login, password = :password,nom=:nom,prenom=:prenom,mail=:mail,admin=:admin WHERE login =:login');
 	$req->execute(array
 		(
 			'login'=>$_POST['login'],

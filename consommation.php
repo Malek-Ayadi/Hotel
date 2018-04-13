@@ -23,7 +23,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-	<div class="border border-primary" style="margin:200px; padding:20px">
+	<div class="border border-primary" style="margin:201px; padding:20px">
 	<div class="container col-3">
 <form method="post" action="traitementConsommation.php">
 	<div class="form-group">

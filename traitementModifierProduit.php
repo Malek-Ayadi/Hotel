@@ -23,7 +23,7 @@
 			'id'=>$_GET['id']
 		));
 
-	header("Location: espaceAdmin.php");
+	header("Location: gererProduit.php");
 	
 ?>
 

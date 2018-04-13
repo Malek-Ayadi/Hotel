@@ -23,7 +23,7 @@
 			<h5>Êtes vous sur de vouloir supprimer cet employé ?</h5>
             <div class="bouton">
                <button type="submit" class="btn btn-primary btn" value="Supprimer">Supprimer</button>
-               <button type="button" class="btn btn-primary btn" value="Retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
+               <button type="submit" class="btn btn-primary btn" value="Retour">Retour</button>
             </div>
 		</form>
     </div>

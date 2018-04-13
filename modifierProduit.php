@@ -23,10 +23,11 @@
 			<input type="text" class="form-control" placeholder="Libellé" name="libelle" id="libelle" value="<?php echo $_GET['libellé'] ?>" required>
 			<input type="text" class="form-control" placeholder="Prix" name="prix" id="prix" value="<?php echo $_GET['prix'] ?>" required>
             <button type="submit" class="btn btn-primary btn" value="modifier">Modifier</button>
-            <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
+            <button type="submit" class="btn btn-primary btn" value="retour">Retour</button>
 		</form>
     </div>
 
+		<script src="buttonRetourProduit.js"></script>
 
 	</body>
 	</html>

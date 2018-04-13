@@ -15,12 +15,12 @@
 
 	$bdd->query("USE projet");
 
-	$req=$bdd->prepare('UPDATE produit SET type = :type WHERE produit.id_produit = :id');
-	$req->execute(array
-		(
-			'lib'=>$_POST['type'],
-			'id'=>$_GET['id']
+	$req = $bdd->prepare ('UPDATE projet.chambre SET type=? WHERE id_chamb = ?');
+		$req->execute(array(
+			$_POST['type'],
+			$_POST['id_chamb']
 		));
+	
 
 	header("Location: espaceAdmin.php");
 	

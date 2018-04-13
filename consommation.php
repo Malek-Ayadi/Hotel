@@ -6,7 +6,19 @@
 	
 if (isset($_GET['err']))
 {
-    echo("<p id='err'>Erreur ID inexistant</p>");
+    echo("<p id='err'>Consommation enregistrée</p>");
+}
+if (isset($_GET['err1']))
+{
+    echo("<p id='err1'>Erreur ID Produit et ID Client inexistants</p>");
+}
+if (isset($_GET['err2']))
+{
+    echo("<p id='err2'>Erreur ID Client inexistant</p>");
+}
+if (isset($_GET['err3']))
+{
+    echo("<p id='err3'>Erreur ID Produit inexistant</p>");
 }
 
 

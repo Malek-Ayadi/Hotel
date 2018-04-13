@@ -15,17 +15,24 @@
 
         <!-- Custom styles for this template -->
         <link href="ajouterPersonnelCss.css" rel="stylesheet">
-		<title>modifier Personnel</title>
+		<title>Modifier Personnel</title>
 	</head>
 	<body>
     <div class="container col-3">
 		<form action="traitementModifierChambre.php?id=<?php echo $_GET['id']?>" method="POST">
             
             <div class="col">
-              <input type="number" class="form-control" placeholder="Id" name="id" id="id" value="<?php echo $_GET['id'] ?>" required>
+              <input type="number" class="form-control" readonly placeholder="Id" name="id_chamb" id="id" value="<?php echo $_GET['id'] ?>" required>
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Type" name="type" id="type" value="<?php echo $_GET['type'] ?>" required>
+             <p>
+                <label for="type">Type de la chambre: </label>
+                <select size="1" name="type" id="type" required class="form-control form-control-lg"> 
+                    <option value="simple">Simple</option> 
+                    <option value="double">Double</option> 
+                    <option value="triple">Triple</option>
+                </select>
+            </p>
             </div>
             
 

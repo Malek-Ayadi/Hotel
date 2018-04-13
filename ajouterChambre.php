@@ -21,8 +21,14 @@
     <div class="container col-3">
 		<form action="traitementAjouterChambre.php" method="POST">
             
-            <input type="text" class="form-control" placeholder="Id" name="id" id="id">
-			<input type="text" class="form-control" placeholder="type" name="type" id="type">
+            <p>
+                <label for="type">Type de la chambre: </label>
+                <select size="1" name="type" id="type" required class="form-control form-control-lg"> 
+                    <option value="simple">Simple</option> 
+                    <option value="double">Double</option> 
+                    <option value="triple">Triple</option>
+                </select>
+            </p>
 			
             <button type="submit" class="btn btn-primary btn" value="ajouter">Ajouter</button>
             <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>

@@ -48,7 +48,7 @@
 				<td><?php echo $resultat['id_produit'];?></td>
 				<td><?php echo $resultat['libellé'];?></td>
 				<td><?php echo $resultat['prix'];?></td>
-				<td><a href="modifierProduit.php?id=<?php echo ($resultat['id_produit']) ?>">modifier</a></td>
+				<td><a href="modifierProduit.php?<?php echo 'id='.($resultat['id_produit']).'&libellé='.$resultat['libellé'].'&prix='.$resultat['prix'] ?>">modifier</a></td>
 				<td><a href="supprimerProduit.php?id=<?php echo ($resultat['id_produit']) ?>">supprimer</a></td>
 			</tr><?php
 		}

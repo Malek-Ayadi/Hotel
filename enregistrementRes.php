@@ -35,7 +35,7 @@
 	</head>
 	<body>
 		<div class="container col-6">
-			<div class="border border-primary" style="margin:201px; padding:20px">
+			<div class="border border-primary" style="margin:100px; padding:20px">
 		<form action="traitementEnregistrementRes.php" method="POST">
 			<p><label for="id_clt">Id client: </label><input required type="number" value="<?php echo ("$id")?>" name="id_clt" id="id_clt" class="form-control form-control-lg"></p>
 			<p><label for="id_clt">Numéro Chambre: </label><input required type="number" value="<?php echo ("$chambre")?>" name="id_chamb" id="id_chamb" class="form-control form-control-lg"></p>

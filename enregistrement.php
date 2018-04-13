@@ -22,10 +22,24 @@
 			<div class="border border-primary" style="margin:201px; padding:20px">
 		<form action="verifExistanceClt.php?chambre=<?php echo($chambre) ?>&dateArr=<?php echo($dateArr) ?>&dateDep=<?php echo($dateDep) ?>" method="POST">
 			<p><label for="cin">Saisir le CIN du client pour l'enregistrement: </label><input placeholder="0986642" type="number" name="cin" id="cin" required class="form-control form-control-lg"></p>
-			<input type="submit" name="Reserver" id="Reserver" value="Réserver" class="btn btn-primary">
+			<input type="submit" name="Reserver" id="Reserver" value="Réserver" class="btn btn-primary" >
 		</form>
 	</div>
 	</div>
+
+	<script type="text/javascript">
+		var para1=document.getElementById('cin');
+
+		cin.addEventListener('change',function()
+		{
+			if (cin.value.toString().length!=8)
+		    {
+		    	cin.value="";
+		    	alert("Veuillez bien saisir le numéro CIN");
+			}
+				
+		});
+	</script>
 	<?php include 'piedPage.php';  ?>
 	</body>
 	</html>

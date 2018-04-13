@@ -6,18 +6,8 @@
 	
 if (isset($_GET['err']))
 {
-if(($_GET['err'])==1)
-{
-    echo("<p id='er1'>Erreur ID Produit inexistant</p>");
+    echo("<p id='err'>Erreur ID inexistant</p>");
 }
-else if(($_GET['err'])==2)
-{
-    echo("<p id='er1'>Erreur ID Client inexistant</p>");
-}
-
-}
-
-
 
 
 	try

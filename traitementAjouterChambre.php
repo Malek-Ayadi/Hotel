@@ -13,10 +13,9 @@
 
 	}
 
-	$req=$bdd->prepare('INSERT INTO projet.produit (id_chamb,type) VALUES (?,?,?)');
+	$req=$bdd->prepare('INSERT INTO projet.chambre (type) VALUES (?)');
 	$req->execute(array
 		(
-			$_POST['id'],
 			$_POST['type']
 		));
 

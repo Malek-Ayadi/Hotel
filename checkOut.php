@@ -29,7 +29,7 @@ catch (PDOException $e)
 </head>
 <body>
 <form method="post" action="traitementCheckOut.php">
-    <label for="cin">cin</label> <input type="text" name="cin">
+    <label for="cin">cin</label> <input type="number" name="cin">
     <input type="submit" name="entrer" value="entrer">
 </form>
 

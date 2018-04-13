@@ -33,9 +33,9 @@
 			<input type="text"  class="form-control" placeholder="E-mail" name="mail" id="mail">
             <div class="form-check">
 			     <input type="checkbox" class="form-check-input" name="admin" id="admin">
-                <label class="form-check-label" >Admin</label>
+                <label for="admin" class="form-check-label" >Admin</label>
             </div>
-            <button type="submit" class="btn btn-primary btn" value="ajouter">Submit</button>
+            <button type="submit" class="btn btn-primary btn" value="ajouter">Ajouter</button>
 		</form>
     </div>
 

@@ -23,7 +23,7 @@
 			<input type="text" class="form-control" placeholder="Identifiant" name="id" id="id">
 			<input type="text" class="form-control" placeholder="Libellé" name="libelle" id="libelle">
 			<input type="text" class="form-control" placeholder="Prix" name="prix" id="prix">
-            <button type="submit" class="btn btn-primary btn" value="ajouter">Submit</button>
+            <button type="submit" class="btn btn-primary btn" value="ajouter">Ajouter</button>
 		</form>
     </div>
 

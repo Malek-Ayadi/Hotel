@@ -48,7 +48,7 @@
                     <a class="nav-link" href="#">Check-out</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="espaceAdmin.php">Espace Admin</a>
+                    <a class="nav-link" id="espaceAdmin" href="espaceAdmin.php">Espace Admin</a>
                 </li>
 
             </ul>

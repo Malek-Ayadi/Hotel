@@ -20,17 +20,14 @@
     <?php
     include ("navigationAdmin.php");
     ?>
-		<div class="container" style="margin-bottom: 118px">
-          <table class="table ">
-			<tr>
-				<td><?php include'gererProduit.php' ?></td>
-				<td><?php include'gererPersonnel.php' ?></td>
-				<td><?php //include'gererProduit.php' ?></td>
-			</tr>
-		  </table>
+		<div class="container col-1" style="margin-left: 1px">
+            <button type="button" id="enployee" class="btn btn-outline-primary">Employé</button>
+            <button style="padding-right: 21px" type="button" class="btn btn-outline-primary">Produit</button>
+            <button type="button" class="btn btn-outline-primary">Chambre</button>
         </div>
     <?php
     include ('piedPage.php');
     ?>
+    <script src="espaceAdminJs.js"></script>
 	</body>
 	</html>

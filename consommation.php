@@ -1,5 +1,14 @@
 <?php
 <<<<<<< HEAD
+	include 'verificationAuthentification.php';
+	
+	include 'choixNavigation.php';
+	
+if (isset($_GET['err']))
+{
+=======
+
+>>>>>>> 0e6274be4b35d7199ed8437e79b72d353b540148
 if(($_GET['err'])==1)
 {
     echo("<p id='er1'>Erreur ID Produit inexistant</p>");
@@ -8,10 +17,15 @@ else if(($_GET['err'])==2)
 {
     echo("<p id='er1'>Erreur ID Client inexistant</p>");
 }
+<<<<<<< HEAD
+}
+
 =======
+
 	include 'verificationAuthentification.php';
 	
 	include 'choixNavigation.php';
+>>>>>>> 0e6274be4b35d7199ed8437e79b72d353b540148
 
 
 
@@ -24,7 +38,10 @@ else if(($_GET['err'])==2)
 	    die('Erreur : '.$e->getMessage());
 
 	} 
->>>>>>> e41ae3189a528bcbb63d8de5866eba142f325a92
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0e6274be4b35d7199ed8437e79b72d353b540148
 ?>
 <!DOCTYPE html>
 <html>
@@ -34,8 +51,9 @@ else if(($_GET['err'])==2)
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+	<div class="container col-6">
 	<div class="border border-primary" style="margin:201px; padding:20px">
-	<div class="container col-3">
+	
 <form method="post" action="traitementConsommation.php">
 	<div class="form-group">
     <label for="id_produit">ID produit</label><input type="number" name="id_produit" id="id_produit" class="form-control form-control-lg">

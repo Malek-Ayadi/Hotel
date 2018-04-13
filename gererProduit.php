@@ -17,7 +17,8 @@
 
 </head>
 <body>
-     <div class="bb">
+<div class="corps" style="margin-left: 600px;">
+     <div class="bb" style="margin-left: 30px;">
 	       <a href="ajouterProduit.php" class="btn btn-secondary active" role="button" aria-pressed="true">Ajouter produit</a>
      </div>
     <div class="col-1">
@@ -34,7 +35,7 @@
 		$req=$bdd->query('SELECT * from `Produit`');
 			?>
         <tr class="table-dark">
-            <td>Id</td>
+            <td>Identifiant</td>
             <td>Libellé</td>
             <td>Prix</td>
             <td></td>
@@ -55,4 +56,5 @@
 	?>
 	</table>
     </div>
+</div>
 </body>

@@ -30,7 +30,7 @@
 <!DOCTYPE html>
 	<html>
 	<head>
-		<title>enregistrementRes</title>
+		<title>Enregistrement</title>
 		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>

@@ -37,6 +37,9 @@ while ($affiche=$reponse->fetch())
                 $req->execute(array($cons));
 
             }
+                header("Location: main.php");
+                 break;
+
         }
 
         else

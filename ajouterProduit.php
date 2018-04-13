@@ -24,6 +24,7 @@
 			<input type="text" class="form-control" placeholder="Libellé" name="libelle" id="libelle">
 			<input type="text" class="form-control" placeholder="Prix" name="prix" id="prix">
             <button type="submit" class="btn btn-primary btn" value="ajouter">Ajouter</button>
+            <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
 		</form>
     </div>
 

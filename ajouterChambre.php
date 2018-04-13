@@ -15,14 +15,16 @@
 
         <!-- Custom styles for this template -->
         <link href="ajouterPersonnelCss.css" rel="stylesheet">
-		<title>modifier produit</title>
+		<title>ajouter chambre</title>
 	</head>
 	<body>
     <div class="container col-3">
-		<form action="traitementModifierProduit.php?<?php echo 'id='. $_GET['id']?>" method="POST">
-			<input type="text" class="form-control" placeholder="Libellé" name="libelle" id="libelle" value="<?php echo $_GET['libellé'] ?>" required>
-			<input type="text" class="form-control" placeholder="Prix" name="prix" id="prix" value="<?php echo $_GET['prix'] ?>" required>
-            <button type="submit" class="btn btn-primary btn" value="modifier">Modifier</button>
+		<form action="traitementAjouterChambre.php" method="POST">
+            
+            <input type="text" class="form-control" placeholder="Id" name="id" id="id">
+			<input type="text" class="form-control" placeholder="type" name="type" id="type">
+			
+            <button type="submit" class="btn btn-primary btn" value="ajouter">Ajouter</button>
             <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
 		</form>
     </div>

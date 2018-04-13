@@ -15,18 +15,25 @@
 
         <!-- Custom styles for this template -->
         <link href="ajouterPersonnelCss.css" rel="stylesheet">
-		<title>modifier produit</title>
+		<title>modifier Personnel</title>
 	</head>
 	<body>
     <div class="container col-3">
-		<form action="traitementModifierProduit.php?<?php echo 'id='. $_GET['id']?>" method="POST">
-			<input type="text" class="form-control" placeholder="Libellé" name="libelle" id="libelle" value="<?php echo $_GET['libellé'] ?>" required>
-			<input type="text" class="form-control" placeholder="Prix" name="prix" id="prix" value="<?php echo $_GET['prix'] ?>" required>
+		<form action="traitementModifierPersonnel.php?id=<?php echo $_GET['id']?>" method="POST">
+            
+            <div class="col">
+              <input type="number" class="form-control" placeholder="Id" name="id" id="id" value="<?php echo $_GET['id'] ?>" required>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Type" name="type" id="type" value="<?php echo $_GET['type'] ?>" required>
+            </div>
+            
+
             <button type="submit" class="btn btn-primary btn" value="modifier">Modifier</button>
             <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
-		</form>
     </div>
 
+		<script src="buttonRetourPersonnel.js"></script>
 
 	</body>
 	</html>

@@ -36,6 +36,7 @@
                 <label for="admin" class="form-check-label" >Admin</label>
             </div>
             <button type="submit" class="btn btn-primary btn" value="ajouter">Ajouter</button>
+            <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
 		</form>
     </div>
 

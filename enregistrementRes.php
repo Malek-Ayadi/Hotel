@@ -1,6 +1,7 @@
 <?php
 
-	//include '../verificationAuthentification.php';
+	include 'verificationAuthentification.php';
+	include 'choixNavigation.php';
 
 	
 	try
@@ -30,15 +31,20 @@
 	<html>
 	<head>
 		<title>enregistrementRes</title>
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
+		<div class="container col-6">
+			<div class="border border-primary" style="margin:100px; padding:20px">
 		<form action="traitementEnregistrementRes.php" method="POST">
-			<p><label for="id_clt">Id client: </label><input required type="number" value="<?php echo ("$id")?>" name="id_clt" id="id_clt"></p>
-			<p><label for="id_clt">Numéro Chambre: </label><input required type="number" value="<?php echo ("$chambre")?>" name="id_chamb" id="id_chamb"></p>
-			<p><label for="dateArr">Date d'arrivee: </label><input type="date" value="<?php echo ("$dateArr")?>" name="dateArr" id="dateArr" required></p>
-			<p><label for="dateDep">Date de départ: </label><input type="date" value="<?php echo ("$dateDep")?>" name="dateDep" id="dateDep" required></p>
+			<p><label for="id_clt">Id client: </label><input required type="number" value="<?php echo ("$id")?>" name="id_clt" id="id_clt" class="form-control form-control-lg"></p>
+			<p><label for="id_clt">Numéro Chambre: </label><input required type="number" value="<?php echo ("$chambre")?>" name="id_chamb" id="id_chamb" class="form-control form-control-lg"></p>
+			<p><label for="dateArr">Date d'arrivee: </label><input type="date" value="<?php echo ("$dateArr")?>" name="dateArr" id="dateArr" required class="form-control form-control-lg"></p>
+			<p><label for="dateDep">Date de départ: </label><input type="date" value="<?php echo ("$dateDep")?>" name="dateDep" id="dateDep" required class="form-control form-control-lg"></p>
 			<input type="submit" name="reserver" value="Réserver">
 		</form>
+	</div>
+</div>
 
 		<script type="text/javascript">
 			var dateArr=document.getElementById('dateArr');
@@ -54,5 +60,6 @@
 				
 		});
 		</script>
+		<?php include 'piedPage.php';  ?>
 	</body>
 	</html>

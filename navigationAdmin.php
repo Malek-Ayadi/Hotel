@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 
 <head>
 
@@ -21,7 +21,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#">ici le nom de l'hotel</a>
+        <a class="navbar-brand" href="main.php">ici le nom de l'hotel</a>
         <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>-->
@@ -36,24 +36,22 @@
                     <a class="nav-link" href="reservation.php">Réservation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Enregistrement.php">Enregistrement</a>
+                    <a class="nav-link" href="verifierDisponibiliteDateRes.php">Enregistrement</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Consommation.php">Consommation</a>
-                </li><li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="Facturation.php">Facturation</a>
-                </li><li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#">Chambre</a>
-                </li></li><li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#">Check-out</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="espaceAdmin.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Espace Admin</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="gererProduit.php">Gérer produit</a>
-                        <a class="dropdown-item" href="#">Gérer chambre</a>
-                        <a class="dropdown-item" href="#">Gérer personnel</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="espaceAdmin.php">Espace Admin</a>
                 </li>
 
             </ul>

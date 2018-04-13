@@ -27,6 +27,7 @@
       <th scope="col">id_client</th>
       <th scope="col">Date Arrivée</th>
       <th scope="col">Date_Depart</th>
+      <th scope="col">id_chamb</th>
     </tr>
 			
 			<?php
@@ -59,6 +60,12 @@
 		 			<?php 
 					
 						echo ($aff['dateDep']);
+					?>
+		 	</td> 
+		 	<td>
+		 			<?php 
+					
+						echo ($aff['id_chamb']);
 					?>
 		 	</td> 
 			</tr> <?php } ?>

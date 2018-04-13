@@ -7,13 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="gererPersonnelCss.css" rel="stylesheet">
 
     <title>Gerer Personnel</title>
 
 </head>
 <body>
-	<a href="ajouterPersonnel.php">Ajouter employé</a>
-	<table>
+     <div class="aa">
+	     <a href="ajouterPersonnel.php" class="btn btn-secondary active" role="button" aria-pressed="true" style="margin-left: 170px;">Ajouter employé</a>
+     </div>
+     <div class="col-2">
+	<table class="table-hover table-sm">
 	<?php
 			try
 		{
@@ -24,10 +32,22 @@
 			die('erreur : '.$e->getMessage());
 		}
 		$req=$bdd->query('SELECT * from `employee`');
+			?>
+        <tr class="table-dark">
+            <td>Login</td>
+            <td>Nom</td>
+            <td>Prénom</td>
+            <td>E-mail</td>
+            <td>Admin</td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <?php
 		while($resultat=$req->fetch())
 		{
 			?>
-			<tr>
+			<tr class="table-secondary">
 				<td><?php echo $resultat['login'];?></td>
 				<td><?php echo $resultat['nom'];?></td>
 				<td><?php echo $resultat['prenom'];?></td>
@@ -39,4 +59,5 @@
 		}
 	?>
 	</table>
+     </div>
 </body>

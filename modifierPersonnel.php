@@ -5,19 +5,40 @@
 <!DOCTYPE html>
 	<html>
 	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="ajouterPersonnelCss.css" rel="stylesheet">
 		<title>modifier Personnel</title>
 	</head>
 	<body>
+    <div class="container col-3">
 		<form action="traitementModifierPersonnel.php?login=<?php echo $_GET['login']?>" method="POST">
-			<p><label for="login">login</label><input type="text" name="login" id="login" required></p>
-			<p><label for="password">password</label><input type="password" name="password" required id="password"></p>
-			<p><label for="nom">nom</label><input type="text" name="nom" id="nom" required></p>
-			<p><label for="prenom">prenom</label><input type="text" name="prenom" id="prenom" required></p>
-			<p><label for="mail">mail</label><input type="mail" name="mail" id="mail" required></p>
-			<p><label for="admin">admin</label><input type="checkbox" name="admin" id="admin" <?php  ?> ></p>
-			<input type="submit" value="modifier">
-			<input type="button" value="retour" id="retour">
+            <div class="form-row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nom" name="nom" id="nom" required>
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Prénom" name="prenom" id="prenom" required>
+                </div>
+            </div>
+            <input type="text" class="form-control" placeholder="Login" name="login" id="login" required>
+			<input type="password" class="form-control" placeholder="Mot de passe" name="password" required id="password">
+			<input type="mail" class="form-control" placeholder="E-mail" name="mail" id="mail" required>
+            <div class="form-check">
+			      <input type="checkbox" class="form-check-input" name="admin" id="admin" <?php  ?> >
+                  <label for="admin" class="form-check-label">admin</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn" value="modifier">Modifier</button>
+            <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
 		</form>
+    </div>
 
 		<script src="buttonRetourPersonnel.js"></script>
 

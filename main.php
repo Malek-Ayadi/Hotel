@@ -45,7 +45,7 @@ include("choixNavigation.php");
 }
 </style>
 
-<table class="table table-bordered" >
+<table class="table table-bordered" style="margin-bottom: 38px;">
  
   <tbody>
     <tr>

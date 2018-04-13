@@ -2,6 +2,7 @@
 	include 'verificationAuthentification.php';
 	
 	include 'choixNavigation.php';
+	
 if (isset($_GET['err']))
 {
 if(($_GET['err'])==1)

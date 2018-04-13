@@ -1,17 +1,4 @@
-<?php
-	include 'verificationAuthentification.php';
 
-
-	try
-	{
-		$bdd= new PDO('mysql:host=localhost;dbName=projet', 'root','');
-	}
-	catch(Exception $e)
-	{
-	    die('Erreur : '.$e->getMessage());
-
-	} 
-?>
 <!DOCTYPE html>
 <html>
 <head>

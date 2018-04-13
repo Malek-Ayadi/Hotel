@@ -44,7 +44,7 @@
                     <a class="nav-link" href="Facturation.php">Facturation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Check-out</a>
+                    <a class="nav-link" href="checkOut.php">Check-out</a>
                 </li>
             </ul>
         </div>

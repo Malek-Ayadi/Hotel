@@ -22,9 +22,14 @@
     ?>
 		<div class="container col-1" style="margin-left: 1px">
             <button type="button" id="enployee" class="btn btn-outline-primary">Employé</button>
-            <div id="id_div_1" style="display:none; ><?php include('gererPersonnel.php');?></div>
-            <button style="padding-right: 21px" type="button" class="btn btn-outline-primary">Produit</button>
-            <button type="button" class="btn btn-outline-primary">Chambre</button>
+            <div id="id_div_1" style="display:none; >
+                <?php include('gererPersonnel.php');?>
+            </div>
+            <button type="button" id="prod" class="btn btn-outline-primary">Produit</button>
+            <div id="id_div_2" style="display:none; >
+                <?php include('gererProduit.php');?>
+            </div>
+            <button type="button" class="btn btn-outline-primary" style="padding-right: 9px">Chambre</button>
         </div>
     <?php
     include ('piedPage.php');

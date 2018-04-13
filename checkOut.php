@@ -18,7 +18,8 @@ catch (PDOException $e)
     die('erreur : '.$e->getMessage());
 }
 ?>
-
+ <?php include 'verificationAuthentification.php';
+    include 'choixNavigation.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +29,7 @@ catch (PDOException $e)
      <link href="./css/background.css" rel="stylesheet">
 </head>
 <body>
-    <?php include'choixNavigation.php'; ?>
+    
 
 <div class="container col-12">
     <div  style="margin-right:700px; margin-top: 200px;margin-bottom: 200px; padding-left:50px; padding-right: 50px " >

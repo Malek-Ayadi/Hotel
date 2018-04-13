@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 	<html>
 	<head>
-		<title>enregistrementClt</title>
+		<title>Enregistrement</title>
 	</head>
 	<body>
 		<div class="container col-6">

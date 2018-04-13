@@ -15,7 +15,7 @@
 
         <!-- Custom styles for this template -->
         <link href="ajouterPersonnelCss.css" rel="stylesheet">
-		<title>ajouter personnel</title>
+		<title>ajouter chambre</title>
 	</head>
 	<body>
     <div class="container col-3">

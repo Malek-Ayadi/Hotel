@@ -15,7 +15,7 @@
 			<p><label for="ddn">Date de naissance: </label><input required type="date" name="ddn" id="ddn"></p>
 			<p><label for="mail">E-mail: </label><input required type="email" name="mail" id="mail"></p>
 			<p><label for="adresse">Adresse: </label><input required type="text" name="adresse" id="adresse"></p>
-			<p><label for="tel">Tél: </label><input required type="text" name="tel" id="tel"></p>
+			<p><label for="tel">Tél: </label><input required type="number" name="tel" id="tel"></p>
 			<p><label for="Reserver"></label><input required type="submit" name="Reserver" id="Reserver" value="Réserver" ></p>
 		</form>
 

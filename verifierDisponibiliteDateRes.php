@@ -5,7 +5,7 @@
 	<html>
 	<head>
 
-		<title>Verifier Disponibilité</title>
+		<title>Enregistrement</title>
 		<meta charset="utf-8">
 		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="background.css" rel="stylesheet">

@@ -1,46 +1,59 @@
 <?php
 
-	include 'verificationAuthentification.php';
+include 'verificationAuthentification.php';
 
-	try
+try
+{
+    $bdd= new PDO('mysql:host=localhost;dbName=projet', 'root','');
+}
+catch(Exception $e)
+{
+    die('Erreur : '.$e->getMessage());
+
+}
+$produit=0;
+$clt=0;
+$req1=$bdd->query('SELECT id_clt FROM projet.client');
+while ($aff=$req1->fetch())
+{
+
+    if ($aff['id_clt']==$_POST['id_clt'])
 	{
-		$bdd= new PDO('mysql:host=localhost;dbName=projet', 'root','');
+		$clt=1;
+		break;
 	}
-	catch(Exception $e)
+}
+$req2=$bdd->query('SELECT id_produit FROM projet.produit ');
+while ($aff=$req2->fetch())
+{
+	if ($aff['id_produit']==$_POST['id_produit'])
+     {
+     	$produit =1;
+     	break;
+	 }
+}
+if(($produit==1)&&($clt==1))
 	{
-	    die('Erreur : '.$e->getMessage());
-
+		$req=$bdd->prepare('INSERT INTO projet.consommation (id_clt,id_produit) VALUES (?,?)');
+            $req->execute(array
+            (
+                $_POST['id_clt'],
+                $_POST['id_produit']
+            ));
+            header("Location: consommation.php?err");
+            exit();
 	}
-	$req1=$bdd->query('SELECT id_clt,id_produit FROM projet.client,projet.produit ');
-	while ($aff=$req1->fetch())
+else if(($produit==0)&&($clt==0))
 	{
-		
-		if ($aff['id_clt']==$_POST['id_clt'])
-		{
-			if ($aff['id_produit']==$_POST['id_produit'])
-			{
-				$req=$bdd->prepare('INSERT INTO projet.consommation (id_clt,id_produit) VALUES (?,?)');
-				$req->execute(array
-					(	
-						$_POST['id_clt'],
-						$_POST['id_produit']
-					));
-			}
-			else
-			{
-				header("Location: consommation.php?err=1");
-				exit();
-			}
-
-		}
-		else
-		{
-			header("Location: consommation.php?err=2");
-            echo("<p id='er2'>Erreur ID Client inexistant</p>");
-			exit();
-		}
+		header("Location: consommation.php?err1");
 	}
-	header("Location: consommation.php");
+else if($clt==0)
+	{
+		header("Location: consommation.php?err2");
+	}
+else if($produit==0)
+	{
+		header("Location: consommation.php?err3");
+	}
 
-
-?> 
+	?>

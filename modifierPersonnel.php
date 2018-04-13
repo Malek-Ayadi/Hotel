@@ -36,9 +36,11 @@
                   <label for="admin" class="form-check-label">admin</label>
             </div>
             <button type="submit" class="btn btn-primary btn" value="modifier">Modifier</button>
-            <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
+            <button type="submit" class="btn btn-primary btn" value="retour">Retour</button>
 		</form>
     </div>
+
+		<script src="buttonRetourPersonnel.js"></script>
 
 	</body>
 	</html>

@@ -13,14 +13,14 @@
 	}
 
 	
-	$req=$bdd->prepare('INSERT INTO projet.reservation (id_clt,dateArr,dateDep,id_chamb) VALUES (?,?,?,?)');
+	$req=$bdd->prepare('INSERT INTO projet.reservation (id_clt,dateArr,dateDep) VALUES (?,?,?)');
 	$req->execute(array
 		(	
 			$_POST['id_clt'],
 			$_POST['dateArr'],
-			$_POST['dateDep'],
-			$_POST['id_chamb']
+			$_POST['dateDep']
 		));
+
 	header("Location: reservation.php");
 	
 

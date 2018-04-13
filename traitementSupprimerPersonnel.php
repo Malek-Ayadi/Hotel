@@ -18,6 +18,6 @@
 		(
 			$_GET['login'],
 		));
-	header("Location: espaceAdmin.php");
+	header("Location: gererPersonnel.php");
 	
 	?>

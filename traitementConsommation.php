@@ -40,7 +40,7 @@
 			exit();
 		}
 	}
-	header("Location: index.php");
+	header("Location: consommation.php");
 
 
 ?> 

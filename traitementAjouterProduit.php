@@ -21,6 +21,6 @@
 			$_POST['prix']
 		));
 
-	header("Location: espaceAdmin.php");
+	header("Location: gererProduit.php");
 	
 ?>

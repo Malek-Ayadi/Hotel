@@ -17,18 +17,23 @@
 	if((isset($_POST['admin']))and($_POST['admin']=='on'))
 		$admin=1;
 	else $admin=0;
-	$req=$bdd->prepare('UPDATE produit SET login = :login, password = :password,nom=:nom,prenom=:prenom,mail=:mail,admin=:admin WHERE employee.login =login');
+	$req=$bdd->prepare("UPDATE `employee` SET `login` = ?, `password`=?, `nom`=?, `prenom`=?, `mail`=?,`admin`=? WHERE `employee`.`login` = ?");
 	$req->execute(array
 		(
-			'login'=>$_POST['login'],
-			'password'=>$_POST['password'],
-			'nom'=>$_POST['nom'],
-			'prenom'=>$_POST['prenom'],
-			'mail'=>$_POST['mail'],
-			'admin'=>$admin,
-			'login'=>$_GET['login']
+			$_POST['login'],
+			$_POST['password'],
+			$_POST['nom'],
+			$_POST['prenom'],
+			$_POST['mail'],
+			$admin,
+			$_GET['login']
 		));
+<<<<<<< HEAD
 	
+=======
+	echo $_POST['login'],$_GET['login'];
+	var_dump($req->errorInfo());
+>>>>>>> 9e914c88cb16d0b6f1cf4c9e05d2cf6da636f92f
 	header("Location: espaceAdmin.php");
 	
 ?>

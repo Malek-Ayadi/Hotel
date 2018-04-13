@@ -19,9 +19,9 @@
 	</head>
 	<body>
     <div class="container col-3">
-		<form action="traitementModifierProduit.php?id=<?php echo $_GET['id']?>" method="POST">
-			<input type="text" class="form-control" placeholder="Libellé" name="libelle" id="libelle" required>
-			<input type="text" class="form-control" placeholder="Prix" name="prix" id="prix" required>
+		<form action="traitementModifierProduit.php?<?php echo 'id='. $_GET['id']?>" method="POST">
+			<input type="text" class="form-control" placeholder="Libellé" name="libelle" id="libelle" value="<?php echo $_GET['libellé'] ?>" required>
+			<input type="text" class="form-control" placeholder="Prix" name="prix" id="prix" value="<?php echo $_GET['prix'] ?>" required>
             <button type="submit" class="btn btn-primary btn" value="modifier">Modifier</button>
             <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
 		</form>

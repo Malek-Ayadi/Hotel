@@ -53,7 +53,7 @@
 				<td><?php echo $resultat['prenom'];?></td>
 				<td><?php echo $resultat['mail'];?></td>
 				<td><?php if ($resultat['admin']) echo 'oui';else echo 'non'?></td>
-				<td><a href="modifierPersonnel.php?login=<?php echo ($resultat['login']) ?>">modifier</a></td>
+				<td><a href="modifierPersonnel.php?<?php echo 'login='.($resultat['login']).'&nom='.$resultat['nom'].'&prenom='.$resultat['prenom'].'&mail='.$resultat['mail'] ?>">modifier</a></td>
 				<td><a href="supprimerPersonnel.php?login=<?php echo ($resultat['login']) ?>">supprimer</a></td>
 			</tr><?php
 		}

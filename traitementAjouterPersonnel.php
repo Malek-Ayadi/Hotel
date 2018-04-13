@@ -27,7 +27,6 @@
 			$_POST['mail'],
 		));
 
-	header("Location: gererPersonnel.php");
-	echo $admin;
+	header("Location: espaceAdmin.php");
 	
 ?>

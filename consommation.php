@@ -1,5 +1,5 @@
 <?php
-<<<<<<< HEAD
+
 if(($_GET['err'])==1)
 {
     echo("<p id='er1'>Erreur ID Produit inexistant</p>");
@@ -8,7 +8,7 @@ else if(($_GET['err'])==2)
 {
     echo("<p id='er1'>Erreur ID Client inexistant</p>");
 }
-=======
+
 	include 'verificationAuthentification.php';
 	
 	include 'choixNavigation.php';
@@ -24,7 +24,7 @@ else if(($_GET['err'])==2)
 	    die('Erreur : '.$e->getMessage());
 
 	} 
->>>>>>> e41ae3189a528bcbb63d8de5866eba142f325a92
+
 ?>
 <!DOCTYPE html>
 <html>

@@ -28,12 +28,9 @@
 			$admin,
 			$_GET['login']
 		));
-<<<<<<< HEAD
 	
-=======
 	echo $_POST['login'],$_GET['login'];
 	var_dump($req->errorInfo());
->>>>>>> 9e914c88cb16d0b6f1cf4c9e05d2cf6da636f92f
 	header("Location: espaceAdmin.php");
 	
 ?>

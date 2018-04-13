@@ -20,7 +20,7 @@
     <?php
     include ("navigationAdmin.php");
     ?>
-		<div class="container col-1" style="margin-left: 0px">
+		<div class="container col-1" style="margin-left: 1px">
             <button type="button" id="enployee" class="btn btn-outline-primary">Employé</button>
             <button style="padding-right: 21px" type="button" class="btn btn-outline-primary">Produit</button>
             <button type="button" class="btn btn-outline-primary">Chambre</button>

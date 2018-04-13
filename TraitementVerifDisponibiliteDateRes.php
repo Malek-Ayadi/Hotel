@@ -20,7 +20,7 @@
 	
 	if ($final['id_chamb']==NULL)
 	{
-		header("Location:VerifierDisponibiliteDateRes.php?dispo=n");
+		header("Location:VerifierDisponibiliteDateRes.php?dispo=non");
 		exit();
 	}
 	else

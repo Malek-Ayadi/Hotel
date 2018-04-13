@@ -42,6 +42,7 @@
 					}
 						
 				});
+					
 			</script>
 	<?php include 'piedPage.php';  ?>
 	</body>

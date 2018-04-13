@@ -1,14 +1,11 @@
 <?php
-<<<<<<< HEAD
+
 	include 'verificationAuthentification.php';
 	
 	include 'choixNavigation.php';
 	
 if (isset($_GET['err']))
 {
-=======
-
->>>>>>> 0e6274be4b35d7199ed8437e79b72d353b540148
 if(($_GET['err'])==1)
 {
     echo("<p id='er1'>Erreur ID Produit inexistant</p>");
@@ -17,15 +14,9 @@ else if(($_GET['err'])==2)
 {
     echo("<p id='er1'>Erreur ID Client inexistant</p>");
 }
-<<<<<<< HEAD
+
 }
 
-=======
-
-	include 'verificationAuthentification.php';
-	
-	include 'choixNavigation.php';
->>>>>>> 0e6274be4b35d7199ed8437e79b72d353b540148
 
 
 
@@ -38,10 +29,7 @@ else if(($_GET['err'])==2)
 	    die('Erreur : '.$e->getMessage());
 
 	} 
-<<<<<<< HEAD
-=======
 
->>>>>>> 0e6274be4b35d7199ed8437e79b72d353b540148
 ?>
 <!DOCTYPE html>
 <html>

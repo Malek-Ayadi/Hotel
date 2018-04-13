@@ -36,7 +36,7 @@
                     <a class="nav-link" href="reservation.php">Réservation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Enregistrement.php">Enregistrement</a>
+                    <a class="nav-link" href="verifierDisponibiliteDateRes.php">Enregistrement</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Consommation.php">Consommation</a>

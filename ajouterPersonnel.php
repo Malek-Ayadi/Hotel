@@ -18,6 +18,10 @@
 		<title>ajouter personnel</title>
 	</head>
 	<body>
+        <?php
+    include ("navigationAdmin.php");
+    ?>
+    <div class="abc">
     <div class="container col-3">
 		<form action="traitementAjouterPersonnel.php" method="POST">
             <div class="form-row">
@@ -39,7 +43,7 @@
             <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
 		</form>
     </div>
-
+</div>
 
 	</body>
 	</html>

@@ -18,6 +18,10 @@
 		<title>modifier produit</title>
 	</head>
 	<body>
+		<?php
+    include ("navigationAdmin.php");
+    ?>
+    <div class="abc">
     <div class="container col-3">
 		<form action="traitementModifierProduit.php?<?php echo 'id='. $_GET['id']?>" method="POST">
 			<input type="text" class="form-control" placeholder="Libellé" name="libelle" id="libelle" value="<?php echo $_GET['libellé'] ?>" required>
@@ -26,6 +30,7 @@
             <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
 		</form>
     </div>
+</div>
 
 
 	</body>

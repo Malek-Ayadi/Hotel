@@ -18,6 +18,10 @@
 		<title>ajouter chambre</title>
 	</head>
 	<body>
+        <?php
+    include ("navigationAdmin.php");
+    ?>
+    <div class="abc">
     <div class="container col-3">
 		<form action="traitementAjouterChambre.php" method="POST">
             
@@ -34,7 +38,10 @@
             <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
 		</form>
     </div>
-
+</div>
+    <?php
+    include ("piedPage.php");
+    ?>
 
 	</body>
 	</html>

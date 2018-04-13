@@ -18,6 +18,10 @@
 		<title>Supprimer produit</title>
 	</head>
 	<body>
+        <?php
+    include ("navigationAdmin.php");
+    ?>
+    <div class="abc">
     <div class="container col-5">
 		<form action="traitementSupprimerProduit.php?id=<?php echo $_GET['id']?>" method="POST">
 			<h5>Êtes vous sur de vouloir supprimer ce produit?</h5>
@@ -27,5 +31,6 @@
             </div>
 		</form>
     </div>
+</div>
 	</body>
 	</html>

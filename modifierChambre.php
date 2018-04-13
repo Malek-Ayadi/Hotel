@@ -18,6 +18,10 @@
 		<title>Modifier Personnel</title>
 	</head>
 	<body>
+        <?php
+    include ("navigationAdmin.php");
+    ?>
+    <div class="abc">
     <div class="container col-3">
 		<form action="traitementModifierChambre.php?id=<?php echo $_GET['id']?>" method="POST">
             
@@ -39,7 +43,7 @@
             <button type="submit" class="btn btn-primary btn" value="modifier">Modifier</button>
             <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
     </div>
-
+</form>
 		<script src="buttonRetourPersonnel.js"></script>
 
 	</body>

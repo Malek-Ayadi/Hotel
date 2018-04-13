@@ -18,6 +18,10 @@
 		<title>Supprimer personnel</title>
 	</head>
 	<body>
+        <?php
+    include ("navigationAdmin.php");
+    ?>
+    <div class="abc">
     <div class="container col-5">
 		<form action="traitementSupprimerPersonnel.php?login=<?php echo $_GET['login']?>" method="POST">
 			<h5>Êtes vous sur de vouloir supprimer cet employé ?</h5>
@@ -27,6 +31,7 @@
             </div>
 		</form>
     </div>
+</div>
 
 	</body>
 	</html>

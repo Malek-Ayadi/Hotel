@@ -1,6 +1,6 @@
 <?php
 
-	include '../verificationAuthentification.php';
+	//include '../verificationAuthentification.php';
 
 	try
 	{
@@ -12,6 +12,7 @@
 
 	}
 
+	
 	$req=$bdd->prepare('INSERT INTO projet.reservation (id_clt,dateArr,dateDep) VALUES (?,?,?)');
 	$req->execute(array
 		(	
@@ -21,6 +22,7 @@
 		));
 
 	header("Location: reservation.php");
+	
 
 	
 ?> 

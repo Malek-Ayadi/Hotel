@@ -40,7 +40,5 @@
 		</form>
     </div>
 
-		<script src="buttonRetourPersonnel.js"></script>
-
 	</body>
 	</html>

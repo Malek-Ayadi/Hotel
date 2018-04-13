@@ -30,12 +30,13 @@
             </div>
             <input type="text" class="form-control" placeholder="Login" name="login" id="login">
 			<input type="password" class="form-control" placeholder="Mot de passe" name="password" id="password">
-			<input type="text"  class="form-control" placeholder="E-mail" name="mail" id="mail">
+			<input type="email"  class="form-control" placeholder="E-mail" name="mail" id="mail">
             <div class="form-check">
 			     <input type="checkbox" class="form-check-input" name="admin" id="admin">
                 <label for="admin" class="form-check-label" >Admin</label>
             </div>
             <button type="submit" class="btn btn-primary btn" value="ajouter">Ajouter</button>
+            <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
 		</form>
     </div>
 

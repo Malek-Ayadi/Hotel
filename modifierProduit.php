@@ -23,11 +23,10 @@
 			<input type="text" class="form-control" placeholder="Libellé" name="libelle" id="libelle" required>
 			<input type="text" class="form-control" placeholder="Prix" name="prix" id="prix" required>
             <button type="submit" class="btn btn-primary btn" value="modifier">Modifier</button>
-            <button type="submit" class="btn btn-primary btn" value="retour">Retour</button>
+            <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
 		</form>
     </div>
 
-		<script src="buttonRetourProduit.js"></script>
 
 	</body>
 	</html>

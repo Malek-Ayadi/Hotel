@@ -20,10 +20,11 @@
 	<body>
     <div class="container col-3">
 		<form action="traitementAjouterProduit.php" method="POST">
-			<input type="text" class="form-control" placeholder="Identifiant" name="id" id="id">
-			<input type="text" class="form-control" placeholder="Libellé" name="libelle" id="libelle">
-			<input type="text" class="form-control" placeholder="Prix" name="prix" id="prix">
+			<input type="number" class="form-control" placeholder="Identifiant" name="id" id="id" required>
+			<input type="text" class="form-control" placeholder="Libellé" name="libelle" id="libelle" required>
+			<input type="number" class="form-control" placeholder="Prix" name="prix" id="prix" required>
             <button type="submit" class="btn btn-primary btn" value="ajouter">Ajouter</button>
+            <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
 		</form>
     </div>
 

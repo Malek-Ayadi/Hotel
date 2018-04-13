@@ -23,8 +23,9 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+	<div class="container col-6">
 	<div class="border border-primary" style="margin:201px; padding:20px">
-	<div class="container col-3">
+	
 <form method="post" action="traitementConsommation.php">
 	<div class="form-group">
     <label for="id_produit">ID produit</label><input type="number" name="id_produit" id="id_produit" class="form-control form-control-lg">

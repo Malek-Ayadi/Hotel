@@ -1,5 +1,6 @@
 <?php
 	include 'verificationAuthentification.php';
+    include 'verificationAdmin.php';
 
 ?>
 <!DOCTYPE html>
@@ -22,29 +23,34 @@
     include ("navigationAdmin.php");
     ?>
     <div class="abc">
-    <div class="container col-3">
-		<form action="traitementModifierChambre.php?id=<?php echo $_GET['id']?>" method="POST">
-            
-            <div class="col">
-              <input type="number" class="form-control" readonly placeholder="Id" name="id_chamb" id="id" value="<?php echo $_GET['id'] ?>" required>
-            </div>
-            <div class="col">
-             <p>
-                <label for="type">Type de la chambre: </label>
-                <select size="1" name="type" id="type" required class="form-control form-control-lg"> 
-                    <option value="simple">Simple</option> 
-                    <option value="double">Double</option> 
-                    <option value="triple">Triple</option>
-                </select>
-            </p>
-            </div>
-            
+        <div class="container col-3">
+    		<form action="traitementModifierChambre.php?id=<?php echo $_GET['id']?>" method="POST">
+                
+                <div class="col">
+                  <input type="number" class="form-control" readonly placeholder="Id" name="id_chamb" id="id" value="<?php echo $_GET['id'] ?>" required>
+                </div>
+                <div class="col">
+                 <p>
+                    <label for="type">Type de la chambre: </label>
+                    <select size="1" name="type" id="type" required class="form-control form-control-lg"> 
+                        <option value="simple">Simple</option> 
+                        <option value="double">Double</option> 
+                        <option value="triple">Triple</option>
+                    </select>
+                </p>
+                </div>
+                
 
-            <button type="submit" class="btn btn-primary btn" value="modifier">Modifier</button>
-            <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
-    </div>
-</form>
-		<script src="buttonRetourPersonnel.js"></script>
+                <button type="submit" class="btn btn-primary btn" value="modifier">Modifier</button>
+                <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
+    
+            </form>
+        </div>
+        </div>
+        
+            <?php
+    include ("piedPage.php");
+    ?>
 
 	</body>
 	</html>

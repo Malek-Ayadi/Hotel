@@ -1,5 +1,8 @@
 <?php
-	//include 'verificationAuthentification.php';
+	include 'verificationAuthentification.php';
+        if (($_SESSION['admin']==0))
+        header("Location:index.php");
+    echo $_SESSION['admin'];
 ?>
 <!DOCTYPE html>
 <html>

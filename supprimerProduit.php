@@ -1,5 +1,6 @@
 <?php
 	include 'verificationAuthentification.php';
+    include 'verificationAdmin.php';
 
 ?>
 <!DOCTYPE html>
@@ -32,5 +33,8 @@
 		</form>
     </div>
 </div>
+    <?php
+    include ("piedPage.php");
+    ?>
 	</body>
 	</html>

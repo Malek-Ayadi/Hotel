@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 
 try
 {
@@ -27,7 +27,7 @@ while ($aff=$reponse->fetch())
 
        if(!isset($z))
            {
-               header("Location: Facturation.php?err2");
+               echo("<p id='er2'>Reservation sous ce CIN est introuvable </p>");
                exit();
            }
        $chambre=$aff1['id_chamb'];
@@ -94,7 +94,7 @@ while ($aff=$reponse->fetch())
 
 
 }
-    header("Location: Facturation.php?err1");
+    echo("<p id='er1'>Erreur CIN</p>");
 ?>
 
 

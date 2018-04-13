@@ -1,5 +1,6 @@
 <?php
 	include 'verificationAuthentification.php';
+    include 'verificationAdmin.php';
 
 ?>
 <!DOCTYPE html>
@@ -22,15 +23,19 @@
     include ("navigationAdmin.php");
     ?>
     <div class="abc">
-    <div class="container col-5">
-		<form action="traitementSupprimerChambre.php?id=<?php echo $_GET['id']?>" method="POST">
-			<h5>Êtes vous sur de vouloir supprimer ce produit?</h5>
-            <div class="bouton">
-                <button type="submit" class="btn btn-primary btn" value="Supprimer">Supprimer</button>
-            <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
-            </div>
-		</form>
+        <div class="container col-5">
+    		<form action="traitementSupprimerChambre.php?id=<?php echo $_GET['id']?>" method="POST">
+    			<h5>Êtes vous sur de vouloir supprimer ce produit?</h5>
+                <div class="bouton">
+                    <button type="submit" class="btn btn-primary btn" value="Supprimer">Supprimer</button>
+                <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
+                </div>
+    		</form>
+        </div>
     </div>
-</div>
-	</body>
-	</html>
+
+        <?php
+    include ("piedPage.php");
+    ?>
+</body>
+</html>

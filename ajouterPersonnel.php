@@ -1,5 +1,6 @@
 <?php
 	include 'verificationAuthentification.php';
+    include 'verificationAdmin.php';
 
 ?>
 <!DOCTYPE html>
@@ -43,7 +44,10 @@
             <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
 		</form>
     </div>
-</div>
+</div>    
+<?php
+    include ("piedPage.php");
+    ?>
 
 	</body>
 	</html>

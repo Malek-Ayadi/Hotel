@@ -16,9 +16,10 @@
     <title>Gerer Personnel</title>
 
 </head>
-<body>
+<body >
+<div class="bdy" >
      <div class="aa">
-	     <a href="ajouterPersonnel.php" class="btn btn-secondary active" role="button" aria-pressed="true" style="margin-left: 170px;">Ajouter employé</a>
+	     <a href="ajouterPersonnel.php" class="btn btn-secondary active" role="button" aria-pressed="true" style="margin-left: 200px;">Ajouter employé</a>
      </div>
      <div class="col-2">
 	<table class="table-hover table-sm">
@@ -60,4 +61,5 @@
 	?>
 	</table>
      </div>
+</div>
 </body>

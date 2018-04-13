@@ -32,9 +32,10 @@ while ($aff=$reponse->fetch())
 
         $type=$aff2['type'] ;
 
-        if ($type=="simple") $facture=100 ;
-        elseif ($type=="double") $facture=120 ;
-        elseif ($type=="triple") $facture=150 ;
+        if ($type=="simple") $f=100 ;
+        elseif ($type=="double") $f=120 ;
+        elseif ($type=="triple") $f=150 ;
+        $facture=$f;
 
 
    ?>
@@ -70,19 +71,23 @@ while ($aff=$reponse->fetch())
 
 
         <?php } ?>
+           <tr>
+               <td colspan="2"> Chambre  <?php echo $type; ?></td>
+               <td> <?php echo $f ?> </td>
+           </tr>
           <tr>
                <td colspan="2"> Totale</td>
                <td> <?php echo $facture ?> </td>
-       </tr>
+          </tr>
     <?php
-    break ;
+    exit() ;
     }
-    else
-    {
-        header("Location: Facturation.php?err");
-    }
+
+
+
+
 }
- 
+    header("Location: Facturation.php?err");
 ?>
 
 

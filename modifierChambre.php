@@ -19,7 +19,7 @@
 	</head>
 	<body>
     <div class="container col-3">
-		<form action="traitementModifierPersonnel.php?id=<?php echo $_GET['id']?>" method="POST">
+		<form action="traitementModifierChambre.php?id=<?php echo $_GET['id']?>" method="POST">
             
             <div class="col">
               <input type="number" class="form-control" placeholder="Id" name="id" id="id" value="<?php echo $_GET['id'] ?>" required>

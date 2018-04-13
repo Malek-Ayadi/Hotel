@@ -23,11 +23,11 @@
 			<h5>Êtes vous sur de vouloir supprimer ce produit?</h5>
             <div class="bouton">
                 <button type="submit" class="btn btn-primary btn" value="Supprimer">Supprimer</button>
-                <button type="submit" class="btn btn-primary btn" value="Retour">Retour</button>
+                <button type="button" class="btn btn-primary btn" value="Retour">Retour</button>
             </div>
 		</form>
     </div>
 
-<script src="buttonRetourProduit.js"></script>
+    <script src="buttonRetourProduit.js"></script>
 	</body>
 	</html>

@@ -22,25 +22,23 @@
 		<form action="traitementModifierPersonnel.php?login=<?php echo $_GET['login']?>" method="POST">
             <div class="form-row">
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Nom" name="nom" id="nom" required>
+                  <input type="text" class="form-control" placeholder="Nom" name="nom" id="nom" value="<?php echo $_GET['nom'] ?>" required>
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Prénom" name="prenom" id="prenom" required>
+                  <input type="text" class="form-control" placeholder="Prénom" name="prenom" id="prenom" value="<?php echo $_GET['prenom'] ?>" required>
                 </div>
             </div>
-            <input type="text" class="form-control" placeholder="Login" name="login" id="login" required>
+            <input type="text" class="form-control" placeholder="Login" name="login" id="login" value="<?php echo $_GET['login'] ?>" required>
 			<input type="password" class="form-control" placeholder="Mot de passe" name="password" required id="password">
-			<input type="mail" class="form-control" placeholder="E-mail" name="mail" id="mail" required>
+			<input type="mail" class="form-control" placeholder="E-mail" name="mail" id="mail" value="<?php echo $_GET['mail'] ?>" required>
             <div class="form-check">
 			      <input type="checkbox" class="form-check-input" name="admin" id="admin" <?php  ?> >
                   <label for="admin" class="form-check-label">admin</label>
             </div>
             <button type="submit" class="btn btn-primary btn" value="modifier">Modifier</button>
-            <button type="submit" class="btn btn-primary btn" value="retour">Retour</button>
+            <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
 		</form>
     </div>
-
-		<script src="buttonRetourPersonnel.js"></script>
 
 	</body>
 	</html>

@@ -1,4 +1,5 @@
 <?php
+	include 'verificationAuthentification.php';
 include 'choixNavigation.php';
 
 

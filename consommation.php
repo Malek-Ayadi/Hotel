@@ -39,10 +39,12 @@ if (isset($_GET['err3']))
     <title>Consommation</title>
     <meta charset="utf-8">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/background.css" rel="stylesheet">
 </head>
 <body>
-	<div class="container col-6">
-	<div class="border border-primary" style="margin:201px; padding:20px">
+	<div id=bc>
+	<div class="container col-12">
+	<div  style="margin-right:700px; margin-top: 150px;margin-bottom: 150px; padding-left:50px; padding-right: 50px " >
 	
 <form method="post" action="traitementConsommation.php">
 	<div class="form-group">
@@ -51,6 +53,7 @@ if (isset($_GET['err3']))
     <input type="submit" name="valider" value="valider" class="btn btn-primary">
 </div>
 </form>
+</div>
 </div>
 </div>
 <?php include 'piedPage.php';  ?>

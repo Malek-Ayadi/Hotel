@@ -6,10 +6,11 @@
 	<html>
 	<head>
 		<title>Enregistrement</title>
+		<link href="./css/background.css" rel="stylesheet">
 	</head>
 	<body>
-		<div class="container col-6">
-			<div class="border border-primary" style="margin:100px; padding:20px">
+		<div class="container col-12">
+	<div  style="margin-right:700px; margin-top: 50px;margin-bottom: 50px; padding-left:50px; padding-right: 50px " >
 		<form action="traitementEnregistrementClt.php?cin=<?php echo ($_GET['cin']) ?>&chambre=<?php echo ($_GET['chambre']) ?>&dateDep=<?php echo ($_GET['dateDep']) ?>&dateArr=<?php echo ($_GET['dateArr']) ?>" method="POST">
 			<p><label for="nom">Nom: </label><input required type="text" name="nom" id="nom" class="form-control form-control-lg"></p>
 			<p><label for="prenom">Prénom: </label><input required type="text" name="prenom" id="prenom" class="form-control form-control-lg"></p>

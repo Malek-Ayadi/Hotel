@@ -1,7 +1,7 @@
 <?php
 if (isset($_GET['err']))
 {
-    echo ("Le client n'existe pas ou CIN incorrect");
+   echo("<p id='er1'>Erreur CIN</p>");
 
 }
 try

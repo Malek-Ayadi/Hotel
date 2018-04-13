@@ -1,4 +1,14 @@
 <?php
+<<<<<<< HEAD
+if(($_GET['err'])==1)
+{
+    echo("<p id='er1'>Erreur ID Produit inexistant</p>");
+}
+else if(($_GET['err'])==2)
+{
+    echo("<p id='er1'>Erreur ID Client inexistant</p>");
+}
+=======
 	include 'verificationAuthentification.php';
 	
 	include 'choixNavigation.php';
@@ -14,6 +24,7 @@
 	    die('Erreur : '.$e->getMessage());
 
 	} 
+>>>>>>> e41ae3189a528bcbb63d8de5866eba142f325a92
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,8 +34,9 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+	<div class="container col-6">
 	<div class="border border-primary" style="margin:201px; padding:20px">
-	<div class="container col-3">
+	
 <form method="post" action="traitementConsommation.php">
 	<div class="form-group">
     <label for="id_produit">ID produit</label><input type="number" name="id_produit" id="id_produit" class="form-control form-control-lg">

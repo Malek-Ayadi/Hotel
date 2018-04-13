@@ -6,6 +6,7 @@ include("choixNavigation.php");
   <link src="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"></style>
   
   <link href="css/face.css" rel="stylesheet">
+  <title>Home</title>
 
 
 

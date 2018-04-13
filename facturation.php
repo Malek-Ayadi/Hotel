@@ -1,8 +1,12 @@
 <?php
-
-if (isset($_GET['err']))
+if (isset($_GET['err1']))
 {
     echo("<p id='er1'>Erreur CIN</p>");
+
+}
+if (isset($_GET['err2']))
+{
+    echo("<p id='er2'>Reservation sous ce CIN est introuvable </p>");
 
 }
 	include 'verificationAuthentification.php';
@@ -31,13 +35,14 @@ catch(Exception $e)
 	<div class="container col-6">
 	<div class="border border-primary" style="margin:200px; padding:50px">
 <form method="post" action="traitementFacturation.php">
-    <label for="cin">Cin</label> <input type="text" name="cin" class="form-control form-control-lg">
+    <label for="cin">Cin</label> <input type="number" name="cin" class="form-control form-control-lg">
     <input type="submit" name="entrer" value="entrer"  class="btn btn-primary">
 </form>
 </div>
 </div>
 
-<?php include 'piedPage.php'; ?>
+<?php
+include 'piedPage.php'; ?>
 </body>
 
 </html>

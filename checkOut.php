@@ -1,7 +1,12 @@
 <?php
-if (isset($_GET['err']))
+if (isset($_GET['err1']))
 {
-   echo("<p id='er1'>Erreur CIN</p>");
+    echo("<p id='er1'>Erreur CIN</p>");
+
+}
+if (isset($_GET['err2']))
+{
+    echo("<p id='er2'>Reservation sous ce CIN est introuvable </p>");
 
 }
 try
@@ -24,7 +29,7 @@ catch (PDOException $e)
 </head>
 <body>
 <form method="post" action="traitementCheckOut.php">
-    <label for="cin">cin</label> <input type="text" name="cin">
+    <label for="cin">cin</label> <input type="number" name="cin">
     <input type="submit" name="entrer" value="entrer">
 </form>
 

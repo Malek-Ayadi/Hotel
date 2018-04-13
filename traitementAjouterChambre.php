@@ -13,17 +13,13 @@
 
 	}
 
-	$bdd->query("USE projet");
-
-	$req=$bdd->prepare('UPDATE produit SET libellé = :lib, prix = :prix WHERE produit.id_produit = :id');
+	$req=$bdd->prepare('INSERT INTO projet.produit (id_chamb,type) VALUES (?,?,?)');
 	$req->execute(array
 		(
-			'lib'=>$_POST['libelle'],
-			'prix'=>$_POST['prix'],
-			'id'=>$_GET['id']
+			$_POST['id'],
+			$_POST['type']
 		));
 
 	header("Location: espaceAdmin.php");
 	
 ?>
-

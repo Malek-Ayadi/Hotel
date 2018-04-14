@@ -13,10 +13,9 @@
 
 	}
 
-	$req=$bdd->prepare('INSERT INTO projet.produit (id_produit,libellé,prix) VALUES (?,?,?)');
+	$req=$bdd->prepare('INSERT INTO projet.produit (libelle,prix) VALUES (?,?)');
 	$req->execute(array
 		(
-			$_POST['id'],
 			$_POST['libelle'],
 			$_POST['prix']
 		));

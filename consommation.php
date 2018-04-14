@@ -94,8 +94,9 @@ if (isset($_GET['err3']))
                 $i++;      
                     }
                 ?>
-             </p>   
                 </select>
+             </p>   
+                
             <p>
                 <label for="type">Choisir le Client: </label>
                 <select size="1" name="id_clt" id="id_clt" required class="form-control form-control-lg"> 
@@ -110,8 +111,9 @@ if (isset($_GET['err3']))
                 $j++;      
                     }
                 ?>
+                </select> 
              </p>   
-                </select>    
+                   
     
 </div>
 </form>

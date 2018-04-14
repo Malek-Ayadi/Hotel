@@ -46,8 +46,8 @@ while ($aff=$reponse->fetch())
 
 
    ?>
-<div class="container col-5" style="position: absolute;left: 80px;top:180px;">
-   <table  class="table table-striped " >
+<div class="container col-5" style="position: absolute;left: 380px;top:180px;">
+   <table id="tbb" class="table table-striped " >
     <tr>
         <td>N°Consommation</td> <td>Libellé</td> <td>Prix</td>
     </tr>

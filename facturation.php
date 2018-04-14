@@ -23,12 +23,6 @@
 
     }
 ?>
-
-<?php
-    if  (isset($_GET['ok']))
-    include 'traitementFacturation.php';
-    else 
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,6 +40,13 @@
     <link href="./css/background.css" rel="stylesheet">
     <title>Facturation</title>
 </head>
+
+<?php
+    if  (isset($_GET['ok']))
+    include 'traitementFacturation.php';
+    else 
+?>
+
 <body>
 	<div class="container col-12">
     <div  style="margin-right:700px; margin-top: 200px;margin-bottom: 200px; padding-left:50px; padding-right: 50px " >

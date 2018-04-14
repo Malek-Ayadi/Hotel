@@ -1,14 +1,28 @@
 <?php
 include("verificationAuthentification.php");
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/full-width-pics.css" rel="stylesheet">
+    <link href="css/face.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+
+<?php
 include("choixNavigation.php");
 ?>
-<body>
-  <link src="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"></style>
-  
-  <link href="css/face.css" rel="stylesheet">
-  <title>Home</title>
-
-
 
 <table class="table table-bordered" style="margin-bottom: 38px;">
  

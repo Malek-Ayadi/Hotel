@@ -29,14 +29,22 @@
     include 'traitementFacturation.php';
     else 
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Facturation</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/full-width-pics.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-     <link href="./css/background.css" rel="stylesheet">
+    <link href="./css/background.css" rel="stylesheet">
+    <title>Facturation</title>
 </head>
 <body>
 	<div class="container col-12">

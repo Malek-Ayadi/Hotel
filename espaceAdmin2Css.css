@@ -1,0 +1,19 @@
+#cont {
+    margin: 0px;
+    margin-top: 40px;
+}
+#foot {
+    position: relative;
+    bottom: -332px;
+    right: 0px;
+    left: 0px;
+}
+body {
+    background-color: red;
+}
+#prod{
+    padding-right: 24px;
+}
+#enployee{
+    padding-right: 15px;
+}

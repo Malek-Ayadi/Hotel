@@ -114,7 +114,7 @@ if (isset($_GET['err3']))
                 </select> 
              </p>   
                    
-    
+            <input type="submit" name="valider" value="valider" class="btn btn-primary"></p>
 </div>
 </form>
 </div>

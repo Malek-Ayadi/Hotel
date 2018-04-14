@@ -15,13 +15,13 @@
 
 	$bdd->query("USE projet");
 
-	$req=$bdd->prepare('UPDATE produit SET libellé = :lib, prix = :prix WHERE produit.id_produit = :id');
-	$req->execute(array
-		(
-			'lib'=>$_POST['libelle'],
-			'prix'=>$_POST['prix'],
-			'id'=>$_GET['id']
+	$req = $bdd->prepare ('UPDATE projet.produit SET libelle=?, prix=? WHERE id_produit = ?');
+		$req->execute(array(
+			$_POST['libelle'],
+			$_POST['prix'],
+			$_GET['id']
 		));
+	
 
 	header("Location: espaceAdmin.php");
 	

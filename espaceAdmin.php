@@ -22,7 +22,7 @@ if (($_SESSION['admin']==0))
 </head>
 <body >
 <?php
-include ("navigationAdmin2.php");
+include ("navigationAdmin.php");
 ?>
 <div class="container col-1" id="cont" >
     <button type="button" id="enployee" class="btn btn-info">Employé</button>
@@ -45,7 +45,7 @@ include ("navigationAdmin2.php");
     </div>
 </div>
 <?php
-include ('piedPage2.php');
+include ('piedPage.php');
 ?>
 <script src="espaceAdminJs.js"></script>
 </body>

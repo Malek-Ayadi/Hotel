@@ -18,7 +18,7 @@ if (($_SESSION['admin']==0))
     <!-- Custom styles for this template -->
     <link href="css/full-width-pics.css" rel="stylesheet">
     <link href="espaceAdmin2Css.css" rel="stylesheet">
-    <title>Enregistrement</title>
+    <title>Espace admin</title>
 </head>
 <body >
 <?php

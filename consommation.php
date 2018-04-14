@@ -67,11 +67,11 @@ if (isset($_GET['err3']))
 
     }
 
-    $req=$bdd->query('SELECT id_produit,libelle FROM projet.produit');
+    $req=$bdd->query('SELECT id_produit,libelle FROM projet.produit P');
     $aff=$req->fetchAll( PDO::FETCH_ASSOC );
     $i=0;
 
-    $req2=$bdd->query('SELECT id_clt,prenom FROM projet.client');
+    $req2=$bdd->query('SELECT DISTINCT C.id_clt,C.prenom FROM projet.client C, projet.reservation R WHERE C.id_clt=R.id_clt ');
     $aff2=$req2->fetchAll( PDO::FETCH_ASSOC );
     $j=0;
  ?>

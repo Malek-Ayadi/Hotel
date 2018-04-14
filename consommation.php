@@ -70,6 +70,10 @@ if (isset($_GET['err3']))
     $req=$bdd->query('SELECT id_produit,libelle FROM projet.produit');
     $aff=$req->fetchAll( PDO::FETCH_ASSOC );
     $i=0;
+
+    $req2=$bdd->query('SELECT id_clt,prenom FROM projet.client');
+    $aff2=$req2->fetchAll( PDO::FETCH_ASSOC );
+    $j=0;
  ?>
         
 
@@ -92,9 +96,23 @@ if (isset($_GET['err3']))
                 ?>
              </p>   
                 </select>
+            <p>
+                <label for="type">Choisir le Client: </label>
+                <select size="1" name="id_clt" id="id_clt" required class="form-control form-control-lg"> 
+                <?php
+                
+                    while ($j<count($aff2))
+                    {
+                ?>
+                       <option value="<?php echo ($aff2[$j]['id_clt']);  ?>" ><?php echo ($aff2[$j]['prenom']);  ?></option>
 
-    <p><label for="id_clt">ID client</label><input type="number" name="id_clt" id="id_clt" class="form-control form-control-lg">
-    <input type="submit" name="valider" value="valider" class="btn btn-primary"></p>
+                <?php 
+                $j++;      
+                    }
+                ?>
+             </p>   
+                </select>    
+    
 </div>
 </form>
 </div>

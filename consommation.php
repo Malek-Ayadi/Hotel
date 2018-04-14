@@ -55,12 +55,46 @@ if (isset($_GET['err3']))
      ?>
 	<div class="container col-12">
 	<div  style="margin-right:700px; margin-top: 150px;margin-bottom: 150px; padding-left:50px; padding-right: 50px " >
-	
+
+<?php
+    try
+    {
+        $bdd= new PDO('mysql:host=localhost;dbName=projet', 'root','');
+    }
+    catch(Exception $e)
+    {
+        die('Erreur : '.$e->getMessage());
+
+    }
+
+    $req=$bdd->query('SELECT id_produit,libelle FROM projet.produit');
+    $aff=$req->fetchAll( PDO::FETCH_ASSOC );
+    $i=0;
+ ?>
+        
+
+    
 <form method="post" action="traitementConsommation.php">
 	<div class="form-group">
-    <label for="id_produit">ID produit</label><input type="number" name="id_produit" id="id_produit" class="form-control form-control-lg">
-    <label for="id_clt">ID client</label><input type="number" name="id_clt" id="id_clt" class="form-control form-control-lg">
-    <input type="submit" name="valider" value="valider" class="btn btn-primary">
+            <p>
+                <label for="type">Choisir la consommation: </label>
+                <select size="1" name="id_produit" id="id_produit" required class="form-control form-control-lg"> 
+                <?php
+                
+                    while ($i<count($aff))
+                    {
+                ?>
+                       <option value="<?php echo ($aff[$i]['id_produit']);  ?>" ><?php echo ($aff[$i]['libelle']);  ?></option>
+
+                <?php 
+                $i++;      
+                    }
+                ?>
+             </p>   
+                </select>
+
+    <p><label for="id_clt">ID client</label><input type="number" name="id_clt" id="id_clt" class="form-control form-control-lg">
+    <input type="submit" name="valider" value="valider" class="btn btn-primary"></p>
 </div>
 </form>
 </div>

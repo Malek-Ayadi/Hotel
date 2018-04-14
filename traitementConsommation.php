@@ -11,6 +11,7 @@ catch(Exception $e)
     die('Erreur : '.$e->getMessage());
 
 }
+echo ($_POST['id_produit']);
 $produit=0;
 $clt=0;
 $req1=$bdd->query('SELECT id_clt FROM projet.client');

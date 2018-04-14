@@ -1,20 +1,27 @@
         	<?php
 	include 'verificationAuthentification.php';
-	include 'choixNavigation.php'; ?>
-<!DOCTYPE html>
-	<html>
-	<head>
+	 ?>
 
-		<title>Enregistrement</title>
-		<meta charset="utf-8">
-		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="./css/background.css" rel="stylesheet">
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-	</head>
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="css/full-width-pics.css" rel="stylesheet">
+        <link href="./css/background.css" rel="stylesheet">
+        <title>Enregistrement</title>
 	<body>
-		
-		
-		
+    <?php
+    include 'choixNavigation.php';
+    ?>
+
         <div class=bg>
 
 		<div class="container col-12">

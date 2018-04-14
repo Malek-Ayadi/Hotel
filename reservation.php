@@ -79,6 +79,6 @@
 		 	</td> 
 			</tr> <?php } ?>
 		</table>
-		<?php include('piedpage.php'); ?>
+        <div id="ft" style="position: relative;bottom: -332px;right: 0px;left: 0px;"><?php include('piedpage.php'); ?></div>
 	</body>
 	</html>

@@ -46,7 +46,8 @@ while ($aff=$reponse->fetch())
 
 
    ?>
-   <table align="center">
+<div class="container col-5" style="position: absolute;left: 80px;top:180px;">
+   <table  class="table table-striped " >
     <tr>
         <td>N°Consommation</td> <td>Libellé</td> <td>Prix</td>
     </tr>
@@ -86,6 +87,7 @@ while ($aff=$reponse->fetch())
                <td colspan="2"> Totale</td>
                <td> <?php echo $facture ?> </td>
           </tr>
+</div>
     <?php
     exit() ;
     }

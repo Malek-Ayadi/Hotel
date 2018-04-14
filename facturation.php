@@ -1,4 +1,7 @@
 <?php
+    include 'verificationAuthentification.php';
+    include 'choixNavigation.php';
+    
     if (isset($_GET['err1']))
     {
         echo("<p id='er1'>Erreur CIN</p>");
@@ -9,9 +12,6 @@
         echo("<p id='er2'>Reservation sous ce CIN est introuvable </p>");
 
     }
-    include 'verificationAuthentification.php';
-    include 'choixNavigation.php';
-
 
     try
     {
@@ -22,6 +22,8 @@
         die('Erreur : '.$e->getMessage());
 
     }
+
+
 ?>
 <!DOCTYPE html>
 <html>

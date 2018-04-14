@@ -21,7 +21,8 @@
 	</head>
 	<body>
         <?php
-    include ("navigationAdmin.php");
+    include ("navigationAdmin.php");   
+
     ?>
     <div class="container col-12">
     <div  style="margin-right:700px; margin-top: 100px;margin-bottom: 100px; padding-left:50px; padding-right: 50px " >
@@ -35,14 +36,19 @@
                 </div>
             </div>
             <input type="text" class="form-control" placeholder="Login" name="login" id="login" value="<?php echo $_GET['login'] ?>" required>
-			<input type="password" class="form-control" placeholder="Mot de passe" name="password" required id="password">
+            <input type="password" class="form-control" placeholder="Ancien Mot de passe" name="ancienPassword" required id="password">
+            <input type="password" class="form-control" placeholder="Mot de passe" name="password" required id="password">
 			<input type="mail" class="form-control" placeholder="E-mail" name="mail" id="mail" value="<?php echo $_GET['mail'] ?>" required>
             <div class="form-check">
-			      <input type="checkbox" class="form-check-input" name="admin" id="admin" <?php  ?> >
+			      <input type="checkbox" class="form-check-input" name="admin" id="admin" <?php if ($_GET['admin']) echo 'checked' ?> >
                   <label for="admin" class="form-check-label">admin</label>
             </div>
             <button type="submit" class="btn btn-primary btn" value="modifier">Modifier</button>
-            <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button>
+            <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='espaceAdmin.php'">Retour</button><br>
+            <?php
+            if  (isset($_GET['err']))
+            echo 'verifier mdp';
+    ?>
 		</form>
     </div>
 </div>

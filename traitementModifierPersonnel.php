@@ -22,6 +22,13 @@
 	{
 		$admin=0;
 	} 
+	$req=$bdd->prepare('SELECT `password` from `projet`.`employee` where `login`=?');
+    $req->execute(array($_GET['login']));
+    $resultat=$req->fetch();
+    $ancienMDP=$resultat['password'];
+    if($ancienMDP!=$_POST['ancienPassword'])
+    	{header('Location: modifierPersonnel.php?login='.($_POST['login']).'&nom='.$_POST['nom'].'&prenom='.$_POST['prenom'].'&mail='.$_POST['mail'].'&admin='.$_POST['admin'].'&err');
+    	exit();}
 	
 		
 		$req = $bdd->prepare ('UPDATE projet.employee SET login=?, password=?, nom=?, prenom=?, mail=?, admin=? WHERE login = ?');

@@ -39,7 +39,8 @@
     <!-- Custom styles for this template -->
     <link href="css/full-width-pics.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="./css/background.css" rel="stylesheet">
+    <link href="./css/background.css" rel="stylesheet"> 
+
     <title>Facturation</title>
 </head>
 

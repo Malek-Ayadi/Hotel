@@ -27,11 +27,12 @@
     <title>Réservation</title>
 </head>
 
-	<body >
+	<body>
+		
 		<?php include('choixNavigation.php'); ?>
 
 		<table class="table table-striped" align="center" >
-			<tr>
+			<tr >
       <th scope="col">id_reservation</th>
       <th scope="col">id_client</th>
       <th scope="col">Date Arrivée</th>

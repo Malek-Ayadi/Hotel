@@ -25,9 +25,6 @@
                     <a class="nav-link" href="Facturation.php">Facturation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="checkOut.php">Check-out</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" id="espaceAdmin" href="espaceAdmin.php">Espace Admin</a>
                 </li>
 

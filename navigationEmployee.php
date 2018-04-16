@@ -24,9 +24,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="Facturation.php">Facturation</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="checkOut.php">Check-out</a>
-                </li>
             </ul>
         </div>
         <div class="col-1" style="padding-left: 77px;" >

@@ -62,50 +62,57 @@
 include 'choixNavigation.php';
 ?>
 
-	<div class="container col-12">
-    <div  style="margin-right:700px; margin-top: 200px;margin-bottom: 200px; padding-left:50px; padding-right: 50px " >
+	<div class="container col-11" id="cont1">
 
 
 
-    <form method="post" action="Facturation.php?find">
-        <input type="text" name="recherche" class="form-control form-control-lg" placeholder="Recherche by nom">
-        <input type="submit" name="rechercher" class="btn btn-primary">
+                <div class="container col-5" id="cont2">
+                        <form method="post" action="Facturation.php?find">
+                            <div class="form-row">
+                                <div class="col">
+                                     <input type="text" name="recherche" class="form-control form-control" placeholder="Recherche selon nom">
+                                </div>
+                                <div class="col">
+                                     <input type="submit" name="rechercher" class="btn btn-primary">
+                                </div>
+                            </div>
+                       </form>
+                 </div>
 
-    </form>
 
-<div class="container col-5" style="position: absolute;left: 380px;top:180px;">
+                       <div class="container col-10" id="tb" >
+                           <!-- style="position: absolute;left: 380px;top:180px;"-->
+                                <table class="table table-striped " id="tbb">
+                                     <tr>
+                                        <td>id</td>
+                                        <td>nom</td>
+                                        <td>prenom</td>
+                                        <td>ddn</td>
+                                        <td>mail</td>
+                                        <td>adress</td>
+                                        <td>cin</td>
+                                        <td>tel</td>
+                                        <td></td>
+                                     </tr>
+                                     <?php while ($recherche=$req->fetch())
+                                                                      {?>
+                                     <tr>
+                                        <td><?php echo $recherche['id_clt']?></td>
+                                        <td><?php echo $recherche['nom']?></td>
+                                        <td><?php echo $recherche['prenom']?></td>
+                                        <td><?php echo $recherche['ddn']?></td>
+                                        <td><?php echo $recherche['mail']?></td>
+                                        <td><?php echo $recherche['adresse']?></td>
+                                        <td><?php echo $recherche['cin']?></td>
+                                        <td><?php echo $recherche['tel']?></td>
+                                        <td><a href="Facturation.php?id=<?php echo $recherche['id_clt'] ?>&facture">facture</a></td>
+                                     </tr>
+                                                                 <?php }?>
 
-    <table class="table table-striped " id="tbb">
-        <tr>
-            <td>id</td>
-            <td>nom</td>
-            <td>prenom</td>
-            <td>ddn</td>
-            <td>mail</td>
-            <td>adress</td>
-            <td>cin</td>
-            <td>tel</td>
-            <td></td>
-        </tr>
-        <?php while ($recherche=$req->fetch())
-        {?>
-        <tr>
-            <td><?php echo $recherche['id_clt']?></td>
-            <td><?php echo $recherche['nom']?></td>
-            <td><?php echo $recherche['prenom']?></td>
-            <td><?php echo $recherche['ddn']?></td>
-            <td><?php echo $recherche['mail']?></td>
-            <td><?php echo $recherche['adresse']?></td>
-            <td><?php echo $recherche['cin']?></td>
-            <td><?php echo $recherche['tel']?></td>
-            <td><a href="Facturation.php?id=<?php echo $recherche['id_clt'] ?>&facture">facture</a></td>
-        </tr>
-        <?php }?>
+                                </table>
+                     </div>
 
-    </table>
-</div>
-
-</div>
+          </div>
 </div>
 
 <div  id="foot"><?php

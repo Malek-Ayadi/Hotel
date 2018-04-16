@@ -24,10 +24,11 @@
     <!-- Custom styles for this template -->
     <link href="css/full-width-pics.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="reservationCss.css" rel="stylesheet">
     <title>Réservation</title>
 </head>
 
-	<body>
+	<body id="bb">
 		
 		<?php include('choixNavigation.php'); ?>
 

@@ -15,7 +15,7 @@ catch (PDOException $e)
     $reponse = $bdd->query('SELECT * FROM projet.client');
 while ($aff=$reponse->fetch())
 {
-    if ($aff['cin']==$_POST ['cin'])
+    if ($aff['id_clt']==$_GET ['id'])
     {
         $id=$aff['id_clt'];
         $req=$bdd->prepare('SELECT * FROM  projet.produit B, projet.consommation C WHERE B.id_produit=C.id_produit AND  C.id_clt=? ');

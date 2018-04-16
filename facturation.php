@@ -22,7 +22,7 @@
         die('Erreur : '.$e->getMessage());
 
     }
-    if (!(isset($_GET['ok'])))
+    if ((!(isset($_GET['ok']))))
     $req=$bdd->query('SELECT * FROM projet.client');
     else
         {
@@ -51,21 +51,16 @@
     <title>Facturation</title>
 </head>
 
-<?php/*
-    if  (isset($_GET['ok']))
+<?php
+    if  (isset($_GET['ok2']))
     include 'traitementFacturation.php';
-    else */
+    else 
 ?>
 
 <body>
 	<div class="container col-12">
     <div  style="margin-right:700px; margin-top: 200px;margin-bottom: 200px; padding-left:50px; padding-right: 50px " >
-<form method="post" action="facturation.php?ok=1">
-    <label for="cin">Cin</label> <input type="number" name="cin" class="form-control form-control-lg">
-    <input type="submit" name="entrer" value="entrer"  class="btn btn-primary">
-</form>
-</div>
-</div>
+
 
     <form method="post" action="Facturation.php?ok=1">
         <input type="text" name="recherche">
@@ -97,13 +92,14 @@
             <td><?php echo $recherche['adresse']?></td>
             <td><?php echo $recherche['cin']?></td>
             <td><?php echo $recherche['tel']?></td>
-            <td><a href="traitementFacturation.php?id=<?php echo $recherche['id_clt'] ?>">facture</a></td>
+            <td><a href="Facturation.php?id=<?php echo $recherche['id_clt'] ?>&ok2">facture</a></td>
         </tr>
         <?php }?>
 
     </table>
 
-
+</div>
+</div>
 
 <?php
 include 'piedPage.php'; ?>

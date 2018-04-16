@@ -90,6 +90,8 @@ while ($aff=$reponse->fetch())
         </table>
           <form method="post" action="traitementCheckOut.php?id=<?php echo $_GET['id']?>">
               <input type="submit" name="entrer" value="Check out" class="btn btn-primary">
+              <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='facturation.php'">Retour</button>
+              <button type="button" class="btn btn-primary btn" value="imprimer" onclick="document.location.href='#'">Imprimer</button>
           </form>
 </div>
     <?php

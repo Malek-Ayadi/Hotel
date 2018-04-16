@@ -22,7 +22,14 @@
         die('Erreur : '.$e->getMessage());
 
     }
-
+    if (!(isset($_GET['ok'])))
+    $req=$bdd->query('SELECT * FROM projet.client');
+    else
+        {
+            $execution='%'.$_POST['recherche'].'%';
+            $req=$bdd->prepare('SELECT * FROM projet.client where `client`.`nom` like ?');
+            $req->execute(array($execution));
+        }
 
 ?>
 <!DOCTYPE html>
@@ -44,10 +51,10 @@
     <title>Facturation</title>
 </head>
 
-<?php
+<?php/*
     if  (isset($_GET['ok']))
     include 'traitementFacturation.php';
-    else 
+    else */
 ?>
 
 <body>
@@ -60,6 +67,41 @@
 </div>
 </div>
 
+    <form method="post" action="Facturation.php?ok=1">
+        <input type="text" name="recherche">
+        <input type="submit" name="rechercher">
+
+    </form>
+
+
+    <table>
+        <tr>
+            <td>id</td>
+            <td>nom</td>
+            <td>prenom</td>
+            <td>ddn</td>
+            <td>mail</td>
+            <td>adress</td>
+            <td>cin</td>
+            <td>tel</td>
+            <td></td>
+        </tr>
+        <?php while ($recherche=$req->fetch())
+        {?>
+        <tr>
+            <td><?php echo $recherche['id_clt']?></td>
+            <td><?php echo $recherche['nom']?></td>
+            <td><?php echo $recherche['prenom']?></td>
+            <td><?php echo $recherche['ddn']?></td>
+            <td><?php echo $recherche['mail']?></td>
+            <td><?php echo $recherche['adresse']?></td>
+            <td><?php echo $recherche['cin']?></td>
+            <td><?php echo $recherche['tel']?></td>
+            <td><a href="traitementFacturation.php?id=<?php echo $recherche['id_clt'] ?>">facture</a></td>
+        </tr>
+        <?php }?>
+
+    </table>
 
 
 

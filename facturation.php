@@ -1,6 +1,6 @@
 <?php
     include 'verificationAuthentification.php';
-    include 'choixNavigation.php';
+
     
     if (isset($_GET['err1']))
     {
@@ -46,7 +46,7 @@
     <!-- Custom styles for this template -->
     <link href="css/full-width-pics.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="./css/background.css" rel="stylesheet"> 
+    <link href="facturationCss.css" rel="stylesheet">
 
     <title>Facturation</title>
 </head>
@@ -58,6 +58,10 @@
 ?>
 
 <body>
+<?php
+include 'choixNavigation.php';
+?>
+
 	<div class="container col-12">
     <div  style="margin-right:700px; margin-top: 200px;margin-bottom: 200px; padding-left:50px; padding-right: 50px " >
 
@@ -104,8 +108,8 @@
 </div>
 </div>
 
-<?php
-include 'piedPage.php'; ?>
+<div  id="foot"><?php
+include 'piedPage.php'; ?></div>
 </body>
 
 </html>

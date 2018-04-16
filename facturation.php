@@ -62,14 +62,16 @@
     <div  style="margin-right:700px; margin-top: 200px;margin-bottom: 200px; padding-left:50px; padding-right: 50px " >
 
 
+
     <form method="post" action="Facturation.php?ok=1">
-        <input type="text" name="recherche">
-        <input type="submit" name="rechercher">
+        <input type="text" name="recherche" class="form-control form-control-lg" placeholder="Recherche by nom">
+        <input type="submit" name="rechercher" class="btn btn-primary">
 
     </form>
 
+<div class="container col-5" style="position: absolute;left: 380px;top:180px;">
 
-    <table>
+    <table class="table table-striped " id="tbb">
         <tr>
             <td>id</td>
             <td>nom</td>
@@ -97,6 +99,7 @@
         <?php }?>
 
     </table>
+</div>
 
 </div>
 </div>

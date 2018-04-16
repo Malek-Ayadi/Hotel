@@ -15,7 +15,7 @@ catch (PDOException $e)
     $reponse = $bdd->query('SELECT * FROM projet.client');
 while ($aff=$reponse->fetch())
 {
-    if ($aff['id_clt']==$_GET ['id'])
+    if ($aff['id_clt']==$_GET['id'])
     {
         $id=$aff['id_clt'];
         $req=$bdd->prepare('SELECT * FROM  projet.produit B, projet.consommation C WHERE B.id_produit=C.id_produit AND  C.id_clt=? ');
@@ -87,6 +87,10 @@ while ($aff=$reponse->fetch())
                <td colspan="2"> Totale</td>
                <td> <?php echo $facture ?> </td>
           </tr>
+        </table>
+          <form method="post" action="traitementCheckOut.php?id=<?php echo $_GET['id']?>">
+              <input type="submit" name="entrer" value="Check out" class="btn btn-primary">
+          </form>
 </div>
     <?php
     exit() ;

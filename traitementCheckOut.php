@@ -15,7 +15,7 @@ catch (PDOException $e)
 $reponse = $bdd->query('SELECT * FROM projet.client');
 while ($affiche=$reponse->fetch())
 {
-        if ($affiche['cin']==$_POST ['cin']) {
+        if ($affiche['id_clt']==$_GET ['id']) {
 
 
             $id = $affiche['id_clt'];
@@ -42,7 +42,7 @@ while ($affiche=$reponse->fetch())
                 $req->execute(array($cons));
 
             }
-                header("Location: main.php");
+                header("Location: facturation.php");
                  break;
 
         }

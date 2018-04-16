@@ -22,7 +22,7 @@
         die('Erreur : '.$e->getMessage());
 
     }
-    if ((!(isset($_GET['ok']))))
+    if ((!(isset($_GET['find']))))
     $req=$bdd->query('SELECT * FROM projet.client C , projet.reservation R where (C.id_clt=R.id_clt)');
     else
         {
@@ -52,7 +52,7 @@
 </head>
 
 <?php
-    if  (isset($_GET['ok2']))
+    if  (isset($_GET['facture']))
     include 'traitementFacturation.php';
     else 
 ?>
@@ -63,7 +63,7 @@
 
 
 
-    <form method="post" action="Facturation.php?ok=1">
+    <form method="post" action="Facturation.php?find">
         <input type="text" name="recherche" class="form-control form-control-lg" placeholder="Recherche by nom">
         <input type="submit" name="rechercher" class="btn btn-primary">
 
@@ -94,7 +94,7 @@
             <td><?php echo $recherche['adresse']?></td>
             <td><?php echo $recherche['cin']?></td>
             <td><?php echo $recherche['tel']?></td>
-            <td><a href="Facturation.php?id=<?php echo $recherche['id_clt'] ?>&ok2">facture</a></td>
+            <td><a href="Facturation.php?id=<?php echo $recherche['id_clt'] ?>&facture">facture</a></td>
         </tr>
         <?php }?>
 

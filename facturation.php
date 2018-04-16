@@ -23,11 +23,11 @@
 
     }
     if ((!(isset($_GET['ok']))))
-    $req=$bdd->query('SELECT * FROM projet.client C , projet.Reservation R where (C.id_clt=R.id_clt)');
+    $req=$bdd->query('SELECT * FROM projet.client C , projet.reservation R where (C.id_clt=R.id_clt)');
     else
         {
             $execution='%'.$_POST['recherche'].'%';
-            $req=$bdd->prepare('SELECT * FROM projet.client C WHERE (C.nom like ?)');
+            $req=$bdd->prepare('SELECT * FROM projet.client C , projet.reservation R WHERE (C.id_clt=R.id_clt) AND (C.nom like ?)');
             $req->execute(array($execution));
         }
 

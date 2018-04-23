@@ -1,4 +1,5 @@
 <?php
+    include 'verificationAuthentification.php';
 
 
 try
@@ -46,54 +47,82 @@ while ($aff=$reponse->fetch())
 
 
    ?>
-<div class="container col-5" style="position: absolute;left: 380px;top:180px;">
-   <table id="tbb" class="table table-striped " >
-    <tr>
-        <td>N°Consommation</td> <td>Libellé</td> <td>Prix</td>
-    </tr>
-       <?php
-        while ($affiche=$req->fetch())
-       {
+   <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/full-width-pics.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Facture Client id n° <?php echo $_GET['id'] ?></title>
+</head>
+
+<body>
+
+<?php 
+include 'choixNavigation.php'; ?>
+
+   
+    <div class="container col-5" style="position: absolute;left: 380px;top:180px;">
+      <table id="tbb" class="table table-striped " >
+        <tr>
+            <td>N°Consommation</td> <td>Libellé</td> <td>Prix</td>
+        </tr>
+           <?php
+            while ($affiche=$req->fetch())
+           {
             ?>
 
-            <tr>
-                <td>
-                    <?php
-                    echo ($affiche['id_cons']);
-                    ?>
-                </td>
-                 <td>
-                    <?php
-                    echo ($affiche['libelle']);
-                    ?>
-                </td>
-                 <td>
-                    <?php
-                    echo ($affiche['prix']);
-                    $facture=$facture+$affiche['prix'] ; 
-                    ?>
-                </td>
-            </tr>
+                <tr>
+                    <td>
+                        <?php
+                        echo ($affiche['id_cons']);
+                        ?>
+                    </td>
+                     <td>
+                        <?php
+                        echo ($affiche['libelle']);
+                        ?>
+                    </td>
+                     <td>
+                        <?php
+                        echo ($affiche['prix']);
+                        $facture=$facture+$affiche['prix'] ; 
+                        ?>
+                    </td>
+                </tr>
 
 
 
 
-        <?php } ?>
-           <tr>
-               <td colspan="2"> Chambre  <?php echo $type; ?></td>
-               <td> <?php echo $f ?> </td>
-           </tr>
-          <tr>
-               <td colspan="2"> Totale</td>
-               <td> <?php echo $facture ?> </td>
-          </tr>
-        </table>
-          <form method="post" action="traitementCheckOut.php?id=<?php echo $_GET['id']?>">
-              <input type="submit" name="entrer" value="Check out" class="btn btn-primary">
-              <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='facturation.php'">Retour</button>
-              <button type="button" class="btn btn-primary btn" value="imprimer" onclick="document.location.href='#'">Imprimer</button>
-          </form>
-</div>
+            <?php } ?>
+               <tr>
+                   <td colspan="2"> Chambre  <?php echo $type; ?></td>
+                   <td> <?php echo $f ?> </td>
+               </tr>
+              <tr>
+                   <td colspan="2"> Totale</td>
+                   <td> <?php echo $facture ?> </td>
+              </tr>
+            </table>
+              <form method="post" action="traitementCheckOut.php?id=<?php echo $_GET['id']?>">
+                  <input type="submit" name="entrer" value="Check out" class="btn btn-primary">
+                  <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='facturation.php'">Retour</button>
+                  <button type="button" class="btn btn-primary btn" value="imprimer" onclick="document.location.href='#'">Imprimer</button>
+              </form>
+    </div>
+    <?php
+    include 'piedPage.php'; ?>
+
+
     <?php
     exit() ;
     }
@@ -106,4 +135,6 @@ while ($aff=$reponse->fetch())
 ?>
 
 
+</body>
 
+</html>

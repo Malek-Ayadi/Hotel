@@ -107,7 +107,7 @@ include 'choixNavigation.php';
                                         <td><?php echo $recherche['adresse']?></td>
                                         <td><?php echo $recherche['cin']?></td>
                                         <td><?php echo $recherche['tel']?></td>
-                                        <td><a href="Facturation.php?id=<?php echo $recherche['id_clt'] ?>&facture">facture</a></td>
+                                        <td><a href="traitementFacturation.php?id=<?php echo $recherche['id_clt'] ?>&facture">facture</a></td>
                                      </tr>
                                                                  <?php }?>
 

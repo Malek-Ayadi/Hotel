@@ -15,9 +15,10 @@
 
         <!-- Custom styles for this template -->
         <link href="css/full-width-pics.css" rel="stylesheet">
-        <link href="./css/background.css" rel="stylesheet">
+        <!--<link href="./css/background.css" rel="stylesheet">-->
+        <link href="reservationCss.css" rel="stylesheet">
         <title>Enregistrement</title>
-	<body>
+	<body id="bb">
     <?php
     include 'choixNavigation.php';
     ?>

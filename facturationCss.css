@@ -1,13 +1,14 @@
-body {
+#bd {
     /* The image used */
-    background-image: url("css/bc1.jpg");
+    background-image: url("css/images.jpg");
+
 
     /* Full height */
     height: 100%;
 
     /* Center and scale the image nicely */
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 
@@ -28,9 +29,9 @@ body {
 
 }
 
-#tb {
+/*#tb {
     background-image: url("css/images.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
-}
+}*/

@@ -57,7 +57,8 @@
     else 
 ?>
 
-<body>
+<body id="bd" >
+<!-- style=" background-color: #b7b8ce;" -->
 <?php
 include 'choixNavigation.php';
 ?>
@@ -82,7 +83,8 @@ include 'choixNavigation.php';
 
                        <div class="container col-10" id="tb" >
                            <!-- style="position: absolute;left: 380px;top:180px;"-->
-                                <table class="table table-striped " id="tbb">
+                           <!-- style="background-color: #8d9bbf" -->
+                                <table  class="table table-striped "  id="tbb">
                                      <tr>
                                         <td>id</td>
                                         <td>nom</td>

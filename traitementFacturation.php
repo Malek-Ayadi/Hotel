@@ -12,6 +12,8 @@ catch (PDOException $e)
 }
 ?>
 
+
+
    <?php
     $reponse = $bdd->query('SELECT * FROM projet.client');
 while ($aff=$reponse->fetch())
@@ -28,9 +30,11 @@ while ($aff=$reponse->fetch())
 
        if(!isset($z))
            {
-               echo("<p id='er2'>Reservation sous ce CIN est introuvable </p>");
+               echo("<p id='er2'>Reservation sous ce CIN est introuvable </p>");// à quoi ça sert ?!!
                exit();
            }
+
+
        $chambre=$aff1['id_chamb'];
 
 
@@ -47,7 +51,9 @@ while ($aff=$reponse->fetch())
 
 
    ?>
-   <!DOCTYPE html>
+
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -63,12 +69,12 @@ while ($aff=$reponse->fetch())
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <title>Facture Client id n° <?php echo $_GET['id'] ?></title>
+
 </head>
 
 <body>
 
-<?php 
-include 'choixNavigation.php'; ?>
+<?php include ('choixNavigation.php'); ?>
 
    
     <div class="container col-5" style="position: absolute;left: 380px;top:180px;">
@@ -76,6 +82,8 @@ include 'choixNavigation.php'; ?>
         <tr>
             <td>N°Consommation</td> <td>Libellé</td> <td>Prix</td>
         </tr>
+
+
            <?php
             while ($affiche=$req->fetch())
            {
@@ -101,9 +109,9 @@ include 'choixNavigation.php'; ?>
                 </tr>
 
 
+           <?php } ?>
 
 
-            <?php } ?>
                <tr>
                    <td colspan="2"> Chambre  <?php echo $type; ?></td>
                    <td> <?php echo $f ?> </td>
@@ -113,26 +121,25 @@ include 'choixNavigation.php'; ?>
                    <td> <?php echo $facture ?> </td>
               </tr>
             </table>
+
               <form method="post" action="traitementCheckOut.php?id=<?php echo $_GET['id']?>">
                   <input type="submit" name="entrer" value="Check out" class="btn btn-primary">
                   <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='facturation.php'">Retour</button>
                   <button type="button" class="btn btn-primary btn" value="imprimer" onclick="document.location.href='#'">Imprimer</button>
               </form>
     </div>
+<div ><?php include 'piedPage.php'; ?></div>
     <?php
-    include 'piedPage.php'; ?>
 
+        }
 
-    <?php
+        }
     exit() ;
-    }
+           echo("<p id='er1'>Erreur CIN</p>");
+
+     ?>
 
 
-
-
-}
-    echo("<p id='er1'>Erreur CIN</p>");
-?>
 
 
 </body>

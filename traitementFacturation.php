@@ -28,12 +28,6 @@ while ($aff=$reponse->fetch())
        $aff1=$req1->fetch();
        $z=$aff1['id_res'];
 
-       if(!isset($z))
-           {
-               echo("<p id='er2'>Reservation sous ce CIN est introuvable </p>");// à quoi ça sert ?!!
-               exit();
-           }
-
 
        $chambre=$aff1['id_chamb'];
 
@@ -134,8 +128,6 @@ while ($aff=$reponse->fetch())
         }
 
         }
-    exit() ;
-           echo("<p id='er1'>Erreur CIN</p>");
 
      ?>
 

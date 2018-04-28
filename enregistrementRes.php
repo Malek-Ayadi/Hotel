@@ -42,7 +42,7 @@
 			<p><label for="id_clt">Numéro Chambre: </label><input readonly required type="number" value="<?php echo ("$chambre")?>" name="id_chamb" id="id_chamb" class="form-control form-control-lg"></p>
 			<p><label for="dateArr">Date d'arrivee: </label><input readonly type="date" value="<?php echo ("$dateArr")?>" name="dateArr" id="dateArr" required class="form-control form-control-lg"></p>
 			<p><label for="dateDep">Date de départ: </label><input type="date" value="<?php echo ("$dateDep")?>" name="dateDep" id="dateDep" required readonly class="form-control form-control-lg"></p>
-			<input type="submit" name="reserver" value="Réserver"  class="btn btn-primary">
+			<input type="submit" name="reserver" value="Réserver"  class="btn ">
 		</form>
 	</div>
 </div>

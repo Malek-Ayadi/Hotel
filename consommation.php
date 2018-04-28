@@ -108,7 +108,7 @@ if (isset($_GET['err']))
                 </select> 
              </p>   
                    
-            <input type="submit" name="valider" value="valider" class="btn btn-primary"></p>
+            <input type="submit" name="valider" value="valider" class="btn "></p>
 </div>
 </form>
 </div>

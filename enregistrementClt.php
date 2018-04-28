@@ -30,7 +30,7 @@
 			<p><label for="mail">E-mail: </label><input required type="email" name="mail" id="mail" class="form-control form-control-lg"></p>
 			<p><label for="adresse">Adresse: </label><input required type="text" name="adresse" id="adresse" class="form-control form-control-lg"></p>
 			<p><label for="tel">Tél: </label><input required type="number" name="tel" id="tel" class="form-control form-control-lg"></p>
-			<p><label for="Reserver"></label><input required type="submit" name="Reserver" id="Reserver" value="Réserver" class="btn btn-primary"></p>
+			<p><label for="Reserver"></label><input required type="submit" name="Reserver" id="Reserver" value="Réserver" class="btn "></p>
 		</form>
 	</div>
 </div>

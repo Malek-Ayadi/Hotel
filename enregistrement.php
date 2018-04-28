@@ -23,7 +23,7 @@
 	<div  style="margin-right:700px; margin-top: 220px;margin-bottom: 150px; padding-left:50px; padding-right: 50px " >
 		<form action="verifExistanceClt.php?chambre=<?php echo($chambre) ?>&dateArr=<?php echo($dateArr) ?>&dateDep=<?php echo($dateDep) ?>" method="POST">
 			<p><label for="cin">Saisir le CIN du client pour l'enregistrement: </label><input placeholder="0986642" type="number" name="cin" id="cin" required class="form-control form-control-lg"></p>
-			<input type="submit" name="Reserver" id="Reserver" value="Réserver" class="btn btn-primary" >
+			<input type="submit" name="Reserver" id="Reserver" value="Réserver" class="btn " >
 		</form>
 	</div>
 	</div>

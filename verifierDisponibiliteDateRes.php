@@ -15,7 +15,7 @@
 
         <!-- Custom styles for this template -->
         <link href="css/full-width-pics.css" rel="stylesheet">
-        <!--<link href="./css/background.css" rel="stylesheet">-->
+        <link href="./css/background.css" rel="stylesheet">
         <link href="reservationCss.css" rel="stylesheet">
         <title>Enregistrement</title>
 	<body id="bb">
@@ -39,7 +39,7 @@
 
 			<p><label for="dateArr">Date d'arrivée: </label><input type="date" name="dateArr" id="dateArr" required class="form-control form-control-lg"></p>
 			<p><label for="dateDep">Date de départ: </label><input type="date" name="dateDep" id="dateDep" required class="form-control form-control-lg"></p>
-			<p><input type="submit" name="valider" id="valider" class="btn btn-primary"></p>
+			<p><input type="submit" name="valider" id="valider" class="btn " ></p>
 		</form>
 	</div>
 </div>

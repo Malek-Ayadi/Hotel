@@ -74,7 +74,7 @@ include 'choixNavigation.php';
                                      <input type="text" name="recherche" class="form-control form-control" placeholder="Recherche selon nom">
                                 </div>
                                 <div class="col">
-                                     <input type="submit" name="rechercher" class="btn btn-primary">
+                                     <input type="submit" name="rechercher" class="btn " style="background-color: #731315 ;color: white;">
                                 </div>
                             </div>
                        </form>
@@ -107,7 +107,7 @@ include 'choixNavigation.php';
                                         <td><?php echo $recherche['adresse']?></td>
                                         <td><?php echo $recherche['cin']?></td>
                                         <td><?php echo $recherche['tel']?></td>
-                                        <td><a href="traitementFacturation.php?id=<?php echo $recherche['id_clt'] ?>&facture">facture</a></td>
+                                        <td><a style="color:#731315; " href="traitementFacturation.php?id=<?php echo $recherche['id_clt'] ?>&facture">facture</a></td>
                                      </tr>
                                                                  <?php }?>
 

@@ -5,19 +5,13 @@
 	
 if (isset($_GET['err']))
 {
-    echo("<p id='err'>Consommation enregistrée</p>");
-}
-if (isset($_GET['err1']))
-{
-    echo("<p id='err1'>Erreur ID Produit et ID Client inexistants</p>");
-}
-if (isset($_GET['err2']))
-{
-    echo("<p id='err2'>Erreur ID Client inexistant</p>");
-}
-if (isset($_GET['err3']))
-{
-    echo("<p id='err3'>Erreur ID Produit inexistant</p>");
+    echo("<div class=\"alert alert-success alert-dismissible fade show\" role=\"alert\">
+  <strong>Done !</strong> Votre consommation a été enregistrée avec succès  !!
+  <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">
+    <span aria-hidden=\"true\">&times;</span>
+  </button>
+</div>");
+
 }
 
 

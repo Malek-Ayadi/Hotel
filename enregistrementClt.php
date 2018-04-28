@@ -19,7 +19,7 @@
 		<title>Enregistrement</title>
 		<link href="./css/background.css" rel="stylesheet">
 	</head>
-	<body>
+	<body style="background-size: 1346px 1270px ">
 		<div class="container col-12">
 	<div  style="margin-right:700px; margin-top: 50px;margin-bottom: 50px; padding-left:50px; padding-right: 50px " >
 		<form action="traitementEnregistrementClt.php?cin=<?php echo ($_GET['cin']) ?>&chambre=<?php echo ($_GET['chambre']) ?>&dateDep=<?php echo ($_GET['dateDep']) ?>&dateArr=<?php echo ($_GET['dateArr']) ?>" method="POST">

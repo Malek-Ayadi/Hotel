@@ -17,7 +17,7 @@
 		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="./css/background.css" rel="stylesheet">
 	</head>
-	<body>
+	<body style="height: 550px">
 		
 		<div class="container col-12">
 	<div  style="margin-right:700px; margin-top: 220px;margin-bottom: 150px; padding-left:50px; padding-right: 50px " >
@@ -41,6 +41,6 @@
 				
 		});
 	</script>
-	<?php include 'piedPage.php';  ?>
+    <div id="ft" style="position: relative;bottom: -150px;right: 0px;left: 0px;"><?php include('piedpage.php'); ?></div>
 	</body>
 	</html>

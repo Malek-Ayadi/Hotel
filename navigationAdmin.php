@@ -1,19 +1,12 @@
 <!-- Navigation -->
 
 
-
-
-
-
-
-
-
  <!-- changer ici pour modifier la couleur du menu -->
 
 <!-- style="background-color: #0c5460 ;" -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top" >
     <div class="container">
-        <a class="navbar-brand" href="main.php">ici le nom de l'hotel</a>
+        <a class="navbar-brand" href="main.php">MYKASA Hotel</a>
         <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>-->

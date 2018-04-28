@@ -12,14 +12,14 @@ body {
     background-size:cover;
 }
 
-#tbb td {
-    color:white;
+/*#tbb td {
+    color: white;
     font-weight: bold;
     text-shadow: 2px 2px 2px black;
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
-}
+}*/
 
-.btn {
-    background-color: #731315 ;
-    color: white;
+.btn
+{
+    background-color: #731315; color: white;
 }

@@ -61,6 +61,7 @@ while ($aff=$reponse->fetch())
     <!-- Custom styles for this template -->
     <link href="css/full-width-pics.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="./css/background.css" rel="stylesheet">
 
     <title>Facture Client id n° <?php echo $_GET['id'] ?></title>
 
@@ -71,7 +72,7 @@ while ($aff=$reponse->fetch())
 <?php include ('choixNavigation.php'); ?>
 
    
-    <div class="container col-5" style="position: absolute;left: 380px;top:180px;">
+    <div class="container col-5" style="position: initial;margin-top: 100px;">
       <table id="tbb" class="table table-striped " >
         <tr>
             <td>N°Consommation</td> <td>Libellé</td> <td>Prix</td>
@@ -117,12 +118,12 @@ while ($aff=$reponse->fetch())
             </table>
 
               <form method="post" action="traitementCheckOut.php?id=<?php echo $_GET['id']?>">
-                  <input type="submit" name="entrer" value="Check out" class="btn btn-primary">
-                  <button type="button" class="btn btn-primary btn" value="retour" onclick="document.location.href='facturation.php'">Retour</button>
-                  <button type="button" class="btn btn-primary btn" value="imprimer" onclick="document.location.href='#'">Imprimer</button>
+                  <input type="submit" name="entrer" value="Check out" class="btn ">
+                  <button type="button" class="  btn" value="retour" onclick="document.location.href='facturation.php'">Retour</button>
+                  <button type="button" class=" btn" value="imprimer" onclick="document.location.href='#'">Imprimer</button>
               </form>
-    </div>
-<div ><?php include 'piedPage.php'; ?></div>
+
+
     <?php
 
         }
@@ -131,7 +132,10 @@ while ($aff=$reponse->fetch())
 
      ?>
 
+    </div>
 
+
+<div style="position: relative;bottom: -150px;right: 0px;left: 0px;" ><?php include 'piedPage.php'; ?></div>
 
 
 </body>

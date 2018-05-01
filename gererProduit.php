@@ -1,27 +1,9 @@
-<!doctype>
-<html lang="en">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="gererProduitCss.css" rel="stylesheet">
-
-    <title>Gerer Produit</title>
-
-</head>
-<body>
 <div class="corps" style="margin-left: 600px;">
-     <div class="bb" style="margin-left: 30px;">
-	       <a href="ajouterProduit.php" class="btn btn-secondary active" role="button" aria-pressed="true">Ajouter produit</a>
+     <div class="bb" style="margin-left: 3px;margin-top: 20px;margin-bottom: 30px;">
+	       <a  class="btn " href="ajouterProduit.php"   >Ajouter produit</a>
      </div>
-    <div class="col-1">
+    <div class="col-1" style=" padding-left: 0px;margin-left: -87px;">
 	<table class="table-hover table-sm">
 	<?php
 			try
@@ -57,4 +39,4 @@
 	</table>
     </div>
 </div>
-</body>
+

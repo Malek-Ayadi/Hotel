@@ -1,27 +1,9 @@
-<!doctype>
-<html lang="en">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="gererPersonnelCss.css" rel="stylesheet">
-
-    <title>Gerer Personnel</title>
-
-</head>
-<body >
-<div class="bdy" >
-     <div class="aa">
-	     <a href="ajouterPersonnel.php" class="btn btn-secondary active" role="button" aria-pressed="true" style="margin-left: 200px;">Ajouter employé</a>
+<div class="bdy"  style="margin-left: 400px;">
+     <div class="aa" style="margin-top: 20px;margin-bottom: 30px;">
+	     <a href="ajouterPersonnel.php" class="btn  active" role="button" aria-pressed="true" style="margin-left: 200px;">Ajouter employé</a>
      </div>
-     <div class="col-2">
+     <div class="col-2" style="padding-left: 0px; margin-left: -20px;">
 	<table class="table-hover table-sm">
 	<?php
 			try
@@ -63,4 +45,4 @@
 	</table>
      </div>
 </div>
-</body>
+

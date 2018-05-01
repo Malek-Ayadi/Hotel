@@ -20,33 +20,47 @@ if (($_SESSION['admin']==0))
     <link href="espaceAdmin2Css.css" rel="stylesheet">
     <title>Espace admin</title>
 </head>
-<body >
+<bod  >
 <?php
 include ("navigationAdmin.php");
 ?>
+
+    <div class="container" id="bcont"><h1>Espace Administrateur</h1>  </div>
+    <div class="container" id="b1cont"><h3>Modifier,Ajouter ou Supprimer </h3> </div>
+    <div class="container" id="b2cont" >
+        <div class="row">
+            <div class="col-1">
+                <button type="button" id="enployee" class="btn ">Employé</button>
+            </div>
+            <div class="col-1">
+                <button type="button" id="prod" class="btn ">Produit</button>
+            </div>
+            <div class="col-1">
+                <button type="button" id="cham" class="btn ">Chambre</button>
+            </div>
+        </div>
+    </div>
 <div class="container col-1" id="cont" >
-    <button type="button" id="enployee" class="btn btn-info">Employé</button>
+
     <div id="id_div_1" style="display: none">
         <?php
         include('gererPersonnel.php');
         ?>
     </div>
-    <button type="button" id="prod" class="btn btn-info">Produit</button>
+
     <div id="id_div_2" style="display: none;">
         <?php
         include ('gererProduit.php');
         ?>
     </div>
-    <button type="button" id="cham" class="btn btn-info">Chambre</button>
+
     <div id="id_div_3" style="display: none;">
         <?php
         include ('gererChambre.php');
         ?>
     </div>
 </div>
-<?php
-include ('piedPage.php');
-?>
+<div style="position: relative;bottom: -20px;right: 0px;left: 0px;" ><?php include 'piedPage.php'; ?></div>
 <script src="espaceAdminJs.js"></script>
-</body>
+</bod>
 </html>

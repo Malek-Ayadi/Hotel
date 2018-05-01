@@ -1,22 +1,7 @@
-<!doctype>
-<html lang="en">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <title>Gerer Chambre</title>
-
-</head>
-<body >
-<div class="cor" style="margin-left: 220px">
-     <div class="aa" style="margin-left: 150px">
-	     <a href="ajouterChambre.php" class="btn btn-secondary active" role="button" aria-pressed="true" style="margin-left: 170px;">Ajouter Chambre</a>
+<div class="cor" style="margin-left: 220px; margin-top: 20px; ">
+     <div class="aa" style="margin-left: 224px;">
+	     <a href="ajouterChambre.php" class="btn " role="button" aria-pressed="true" style="margin-left: 170px;margin-bottom: 30px;">Ajouter Chambre</a>
      </div>
      <div class="col-2">
 	<table class="table-hover table-sm">
@@ -81,4 +66,4 @@
 	</table>
      </div>
 </div>
-</body>
+

@@ -9,12 +9,17 @@ include("verificationAuthentification.php");
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Bootstrap core CSS -->
+     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    
+    <link href="css/round-about.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
+ <!-- Custom styles for this template -->
     <link href="css/full-width-pics.css" rel="stylesheet">
-    <link href="css/face.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="facturationCss.css" rel="stylesheet">
     <title>Home</title>
 </head>
 
@@ -24,74 +29,66 @@ include("verificationAuthentification.php");
 include("choixNavigation.php");
 ?>
 
-<table class="table table-bordered" style="margin-bottom: 38px;">
- 
-  <tbody>
-    <tr>
-      
-      
-      <td >
-        <div class="container1" >
-    <img src="face.jpeg" alt="face" class="image1">
-    <div class="overlay1">
-    <div class="text1">Skander Meziane</div>
-   </div>
-  </div>
-  </td>
+<!-- Page Content -->
+    <div class="container">
 
+      <!-- Introduction Row -->
+      <h1 class="my-4">
+        <small>Hello Mr/Ms foulén</small>
+      </h1>
+      <p>This establishment is proud to have a professional team of hardworking engineers that contribute daily in the positive development of the firm ! </p>
 
+      <!-- Team Members Row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="my-4">Our Team</h2>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="face.jpg" alt="">
+          <h3>Ayadi Malek
+            <small>Co Founder</small>
+          </h3>
+          <p>Gl 2/2 <br> Contact :</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="face.jpg" alt="">
+          <h3>Derbeli Yahya
+            <small>Co Founder</small>
+          </h3>
+          <p>Gl 2/2 <br> Contact:+21651893654 </p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="face.jpg" alt="">
+          <h3>Turki Khlil
+            <small>Co Founder</small>
+          </h3>
+          <p>Gl 2/2 <br> Contact:</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="face.jpg" alt="">
+          <h3>Karoui Amine
+            <small>Co Founder</small>
+          </h3>
+          <p>Gl 2/2 <br> Contact: </p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="face.jpg" alt="">
+          <h3>Meziane Skander
+            <small>Co Founder</small>
+          </h3>
+          <p>Gl 2/2 <br> Contact:</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="face.jpg" alt="">
+          <h3>Hajyahmed Ahmed
+            <small><br>Co Founder</small>
+          </h3>
+          <p>Gl 2/2 <br> Contact:</p>
+        </div>
+      </div>
 
-
-
-
-
-      <td>
-        <div class="container1" >
-  <img src="face.jpeg" alt="face" class="image1">
-  <div class="overlay1">
-    <div class="text1">khlil turki</div>
-  </div>
- 
-</div>
-</td>
-      <td ><div class="container1" >
-  <img src="face.jpeg" alt="face" class="image1">
-  <div class="overlay1">
-    <div class="text1">khlil turki</div>
-  </div>
- 
-</div>
-</td>
-    </tr>
-    <tr>
-      
-      <td><div class="container1" >
-  <img src="face.jpeg" alt="face" class="image1">
-  <div class="overlay1">
-    <div class="text1">khlil turki</div>
-  </div>
- 
-</div></td>
-      <td><div class="container1" >
-  <img src="face.jpeg" alt="face" class="image1">
-  <div class="overlay1">
-    <div class="text1">khlil turki</div>
-  </div>
- 
-</div></td>
-      <td><div class="container1" >
-  <img src="face.jpeg" alt="face" class="image1">
-  <div class="overlay1">
-    <div class="text1">khlil turki</div>
-  </div>
- 
-</div></td>
-    </tr>
-    
-  </tbody>
-</table>
-
-
+    </div>
+    <!-- /.container -->
 
 
 
@@ -100,7 +97,7 @@ include("choixNavigation.php");
 
 
 
-
-
+<script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <?php include("piedpage.php"); ?>
 </body>

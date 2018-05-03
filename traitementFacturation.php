@@ -67,12 +67,27 @@ while ($aff=$reponse->fetch())
 
 </head>
 
-<body>
+<body id="bd">
 
 <?php include ('choixNavigation.php'); ?>
 
-   
+
+    <div id="monAncre" style="display: none;" class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Impression !</strong> Veuillez patienter quelques instants   !!
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+
     <div class="container col-5" style="position: initial;margin-top: 100px;">
+       <div class="row">
+            <div class="col-6">
+                <h3>MYKASA Hotel</h3>
+            </div>
+            <div class="col-6">
+                <h3 style="text-align: right">Facture</h3>
+            </div>
+      </div>
       <table id="tbb" class="table table-striped " >
         <tr>
             <td>N°Consommation</td> <td>Libellé</td> <td>Prix</td>
@@ -120,7 +135,7 @@ while ($aff=$reponse->fetch())
               <form method="post" action="traitementCheckOut.php?id=<?php echo $_GET['id']?>">
                   <input type="submit" name="entrer" value="Check out" class="btn ">
                   <button type="button" class="  btn" value="retour" onclick="document.location.href='facturation.php'">Retour</button>
-                  <button type="button" class=" btn" value="imprimer" onclick="document.location.href='#'">Imprimer</button>
+                  <button id="imp" type="button" class=" btn" value="imprimer" onclick="document.location.href='#bd'">Imprimer</button>
               </form>
 
 
@@ -137,7 +152,14 @@ while ($aff=$reponse->fetch())
 
 <div style="position: relative;bottom: -150px;right: 0px;left: 0px;" ><?php include 'piedPage.php'; ?></div>
 
-
+<script>
+    var nod=document.getElementById("imp");
+    nod.addEventListener("click",function () {
+        var nod1=document.getElementById("monAncre");
+        if (nod1.style.display == "none")
+        { nod1.style.display = "" ; }
+        });
+</script>
 </body>
 
 </html>

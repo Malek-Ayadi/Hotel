@@ -117,8 +117,7 @@ include 'choixNavigation.php';
           </div>
 </div>
 
-<div  id="foot"><?php
-include 'piedPage.php'; ?></div>
+<div   id="foot"><?php include 'piedPage.php'; ?></div>
 </body>
 
 </html>

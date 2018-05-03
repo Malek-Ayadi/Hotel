@@ -25,7 +25,7 @@ include("verificationAuthentification.php");
 
 <?php
 include("choixNavigation.php");
-?>
+?>  
 
 <!-- Page Content -->
     <div class="container">
@@ -42,42 +42,42 @@ include("choixNavigation.php");
           <h2 class="my-4">Our Team</h2>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="face.jpg" alt="">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="malek.jpg" width=200px height=200px alt="">
           <h3>Ayadi Malek
             <small>Co Founder</small>
           </h3>
           <p>Gl 2/2 <br> Contact :</p>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="face.jpg" alt="">
+          <img class="rounded-circle img-fluid d-block mx-auto"src="yahya.jpg" width=200px height=200px alt="">
           <h3>Derbeli Yahya
             <small>Co Founder</small>
           </h3>
           <p>Gl 2/2 <br> Contact:+21651893654 </p>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="face.jpg" alt="">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="khlil.jpg" width=200px height=200px alt="">
           <h3>Turki Khlil
             <small>Co Founder</small>
           </h3>
           <p>Gl 2/2 <br> Contact:</p>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="face.jpg" alt="">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="amine.jpg" width=200px height=200px alt="">
           <h3>Karoui Amine
             <small>Co Founder</small>
           </h3>
           <p>Gl 2/2 <br> Contact: +21625960144 </p>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="face.jpg" alt="">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="skander.jpg" width=200px height=200px alt="">
           <h3>Meziane Skander
             <small><br>Co Founder</small>
           </h3>
           <p>Gl 2/2 <br> Contact:</p>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="face.jpg" alt="">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="ahmed.jpg" width=200px height=200px alt="">
           <h3>Hajyahmed Ahmed
             <small><br>Co Founder</small>
           </h3>

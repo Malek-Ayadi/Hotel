@@ -67,7 +67,7 @@ include("choixNavigation.php");
           <h3>Karoui Amine
             <small>Co Founder</small>
           </h3>
-          <p>Gl 2/2 <br> Contact: </p>
+          <p>Gl 2/2 <br> Contact: +21625960144 </p>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="face.jpg" alt="">

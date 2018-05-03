@@ -16,10 +16,8 @@ include("verificationAuthentification.php");
     <link href="css/round-about.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
- <!-- Custom styles for this template -->
     <link href="css/full-width-pics.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="facturationCss.css" rel="stylesheet">
+
     <title>Home</title>
 </head>
 
@@ -34,13 +32,13 @@ include("choixNavigation.php");
 
       <!-- Introduction Row -->
       <h1 class="my-4">
-        <small>Hello Mr/Ms foulén</small>
+        <small style=" box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); padding: 17px;">Hello Mr/Ms foulén</small>
       </h1>
-      <p>This establishment is proud to have a professional team of hardworking engineers that contribute daily in the positive development of the firm ! </p>
+      <h3 style="box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); padding: 50px;">This establishment is proud to have a professional team of hardworking engineers that contribute daily in the positive development of the firm ! </h3>
 
       <!-- Team Members Row -->
-      <div class="row">
-        <div class="col-lg-12">
+      <div class="row" style=" box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); padding: 30px; margin:10px">
+        <div class="col-lg-12" >
           <h2 class="my-4">Our Team</h2>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
@@ -74,7 +72,7 @@ include("choixNavigation.php");
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="face.jpg" alt="">
           <h3>Meziane Skander
-            <small>Co Founder</small>
+            <small><br>Co Founder</small>
           </h3>
           <p>Gl 2/2 <br> Contact:</p>
         </div>

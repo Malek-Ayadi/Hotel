@@ -32,7 +32,7 @@ include("choixNavigation.php");
 
       <!-- Introduction Row -->
       <h1 class="my-4">
-        <small style=" box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); padding: 17px;">Hello Mr/Ms foulén !</small>
+        <small style=" box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); padding: 17px;">Hello <?php echo ($_SESSION['login']) ?> !</small>
       </h1>
       <h3 style="box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); padding: 50px;">This establishment is proud to have a professional team of hardworking engineers that contribute daily in the positive development of the firm ! </h3>
 

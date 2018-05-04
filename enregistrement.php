@@ -1,4 +1,9 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="logo2.png">
+    <?php
 	include 'verificationAuthentification.php';
 	include 'choixNavigation.php';
 
@@ -10,12 +15,8 @@
 	$dateDep=$_GET['dateDep'];
 	$chambre=$_GET['chambre'];
 ?>
-<!DOCTYPE html>
-<html>
-	<head>
 		<title>Enregistrement</title>
 		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="shortcut icon" href="logo2.png">
 		<link href="./css/background.css" rel="stylesheet">
 	</head>
 	<body style="height: 550px">

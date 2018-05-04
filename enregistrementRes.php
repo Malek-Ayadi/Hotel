@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="logo2.png">
 <?php
 
 	include 'verificationAuthentification.php';
@@ -27,9 +32,7 @@
 	 $dateArr=$_GET['dateArr'];
 	 $dateDep=$_GET['dateDep'];
 ?>
-<!DOCTYPE html>
-	<html>
-	<head>
+
 		<title>Enregistrement</title>
 		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="./css/background.css" rel="stylesheet">

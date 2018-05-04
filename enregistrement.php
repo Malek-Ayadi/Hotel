@@ -15,6 +15,7 @@
 	<head>
 		<title>Enregistrement</title>
 		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="logo2.png">
 		<link href="./css/background.css" rel="stylesheet">
 	</head>
 	<body style="height: 550px">

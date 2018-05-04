@@ -11,6 +11,7 @@ include("verificationAuthentification.php");
 
      <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="logo2.png">
 
     
     <link href="css/round-about.css" rel="stylesheet">

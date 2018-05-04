@@ -12,6 +12,7 @@
 
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="logo2.png">
 
         <!-- Custom styles for this template -->
         <link href="css/full-width-pics.css" rel="stylesheet">

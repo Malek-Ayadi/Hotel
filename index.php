@@ -17,6 +17,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor\bootstrap-3.3.0\dist\css\bootstrap.min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="logo2.png">
     <!-- Custom styles for this template -->
     <link href="loginCss.css" rel="stylesheet">
 

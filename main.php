@@ -47,42 +47,42 @@ include("choixNavigation.php");
           <h3>Ayadi Malek
             <small>Co Founder</small>
           </h3>
-          <p>Gl 2/2 <br> Contact :</p>
+          <p>Gl 2/2 <br> Contact :+21600000000</p>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto"src="yahya.jpg" width=200px height=200px alt="">
           <h3>Derbeli Yahya
             <small>Co Founder</small>
           </h3>
-          <p>Gl 2/2 <br> Contact:+21651893654 </p>
+          <p>Gl 2/2 <br> Contact:+21611111111 </p>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="khlil.jpg" width=200px height=200px alt="">
           <h3>Turki Khlil
             <small>Co Founder</small>
           </h3>
-          <p>Gl 2/2 <br> Contact:</p>
+          <p>Gl 2/2 <br> Contact:+21622222222</p>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="amine.jpg" width=200px height=200px alt="">
           <h3>Karoui Amine
             <small>Co Founder</small>
           </h3>
-          <p>Gl 2/2 <br> Contact: +21625960144 </p>
+          <p>Gl 2/2 <br> Contact: +21633333333 </p>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="skander.jpg" width=200px height=200px alt="">
           <h3>Meziane Skander
             <small><br>Co Founder</small>
           </h3>
-          <p>Gl 2/2 <br> Contact:</p>
+          <p>Gl 2/2 <br> Contact:+21644444444</p>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="ahmed.jpg" width=200px height=200px alt="">
           <h3>Hajyahmed Ahmed
             <small><br>Co Founder</small>
           </h3>
-          <p>Gl 2/2 <br> Contact:</p>
+          <p>Gl 2/2 <br> Contact:+21655555555</p>
         </div>
       </div>
 

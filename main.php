@@ -44,28 +44,28 @@ include("choixNavigation.php");
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="malek.jpg" width=200px height=200px alt="">
-          <h3>Ayadi Malek
+          <h3>Ayadi Malek<br>
             <small>Co Founder</small>
           </h3>
           <p>Gl 2/2 <br> Contact :+21600000000</p>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto"src="yahya.jpg" width=200px height=200px alt="">
-          <h3>Derbeli Yahya
+          <h3>Derbeli Yahya<br>
             <small>Co Founder</small>
           </h3>
           <p>Gl 2/2 <br> Contact:+21611111111 </p>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="khlil.jpg" width=200px height=200px alt="">
-          <h3>Turki Khlil
+          <h3>Turki Khlil<br>
             <small>Co Founder</small>
           </h3>
           <p>Gl 2/2 <br> Contact:+21622222222</p>
         </div>
         <div class="col-lg-4 col-sm-6 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="amine.jpg" width=200px height=200px alt="">
-          <h3>Karoui Amine
+          <h3>Karoui Amine<br>
             <small>Co Founder</small>
           </h3>
           <p>Gl 2/2 <br> Contact: +21633333333 </p>
